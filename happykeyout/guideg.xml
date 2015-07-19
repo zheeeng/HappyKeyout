@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>G_GUIDE modifier: ** require ** G_GUIDE activated</name>
+
+        <item>
+            <name>Cursor Movement</name>
+            <appendix>【 H => Move left 】</appendix>
+            <appendix>【 J => Move down 】</appendix>
+            <appendix>【 K => Move up 】</appendix>
+            <appendix>【 L => Move right 】</appendix>
+            <appendix>【 Y => Move to first character on line 】</appendix>
+            <appendix>【 U => Move forward to next word 】</appendix>
+            <appendix>【 I => Move backward to next word 】</appendix>
+            <appendix>【 O => Move to end of line 】</appendix>
+            
+            <identifier vk_config="true">notsave.G_GUIDE_FOR_ARROWS</identifier>
+
+            <autogen>__BlockUntilKeyUp__ KeyCode::G</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::H, KeyCode::CURSOR_LEFT</autogen>
+            <autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_DOWN</autogen>
+            <autogen>__KeyToKey__ KeyCode::K, KeyCode::CURSOR_UP</autogen>
+            <autogen>__KeyToKey__ KeyCode::L, KeyCode::CURSOR_RIGHT</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::Y, KeyCode::CURSOR_LEFT, VK_COMMAND</autogen>
+            <autogen>__KeyToKey__ KeyCode::U, KeyCode::CURSOR_RIGHT, VK_OPTION</autogen>
+            <autogen>__KeyToKey__ KeyCode::I, KeyCode::CURSOR_LEFT, VK_OPTION</autogen>
+            <autogen>__KeyToKey__ KeyCode::O, KeyCode::CURSOR_RIGHT, VK_COMMAND</autogen>
+        </item>
+
+        <item>
+            <name>Page Movement</name>
+            <appendix>【 N => Home 】</appendix>
+            <appendix>【 M => Page Down 】</appendix>
+            <appendix>【 COMMA => Page UP 】</appendix>
+            <appendix>【 DOT => End 】</appendix>
+            <identifier vk_config="true">notsave.G_GUIDE_FOR_PAGE</identifier>
+
+            <autogen>__BlockUntilKeyUp__ KeyCode::G</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::N, KeyCode::HOME</autogen>
+            <autogen>__KeyToKey__ KeyCode::M, KeyCode::PAGEDOWN</autogen>
+            <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::PAGEUP</autogen>
+            <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::END</autogen>
+        </item>
+    </item>
+</root>

@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<root>
+    <!-- ASDFGHJKL;' -->
+    <item>
+        <name>Active S_SHIFT, D_OPT, F_CMD, J_CMD, K_OPT, L_SHIFT, SEMICOLON_CTRL</name>
+        <identifier>private.HAPPY_KEYOUT.HANDY_MODIFIER</identifier>
+
+        <autogen>__KeyOverlaidModifier__ KeyCode::S, KeyCode::SHIFT_L, KeyCode::S</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::D, KeyCode::OPTION_L, KeyCode::D</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::F, KeyCode::COMMAND_L, KeyCode::F</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::J, KeyCode::COMMAND_R, KeyCode::J</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::K, KeyCode::OPTION_R, KeyCode::K</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::L, KeyCode::SHIFT_R, KeyCode::L</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::SEMICOLON, KeyCode::SHIFT_L, KeyCode::SEMICOLON,</autogen>
+
+        <block>
+            <autogen>__BlockUntilKeyUp__ KeyCode::S</autogen>
+            <autogen>__BlockUntilKeyUp__ KeyCode::D</autogen>
+            <autogen>__BlockUntilKeyUp__ KeyCode::F</autogen>
+            <autogen>__BlockUntilKeyUp__ KeyCode::J</autogen>
+            <autogen>__BlockUntilKeyUp__ KeyCode::K</autogen>
+            <autogen>__BlockUntilKeyUp__ KeyCode::L</autogen>
+            <autogen>__BlockUntilKeyUp__ KeyCode::SEMICOLON</autogen>
+        </block>
+    </item>
+
+    <item>
+        <name>Active G_GUIDE</name>
+        <identifier>private.HAPPY_KEYOUT.G_GUIDE</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::G,
+
+            @begin
+            KeyCode::VK_CONFIG_FORCE_ON_notsave_G_GUIDE_FOR_ARROWS,
+            KeyCode::VK_CONFIG_FORCE_ON_notsave_G_GUIDE_FOR_PAGE,
+            @end
+
+            @begin
+            KeyCode::G,
+            @end
+
+            Option::KEYTOKEY_AFTER_KEYUP,
+            KeyCode::VK_CONFIG_FORCE_OFF_notsave_G_GUIDE_FOR_ARROWS,
+            KeyCode::VK_CONFIG_FORCE_OFF_notsave_G_GUIDE_FOR_PAGE
+        </autogen>
+    </item>
+
+    <item>
+        <name>Active H_HYPER</name>
+        <identifier>private.HAPPY_KEYOUT.H_HYPER</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::H,
+
+            @begin
+            KeyCode::VK_CONFIG_FORCE_ON_notsave_H_HYPER_FOR_PROGRAMKEYS,
+            @end
+
+            @begin
+            KeyCode::H,
+            @end
+
+            Option::KEYTOKEY_AFTER_KEYUP,
+            KeyCode::VK_CONFIG_FORCE_OFF_notsave_H_HYPER_FOR_PROGRAMKEYS
+        </autogen>
+    </item>
+
+    <item>
+        <name>Active A_PAD</name>
+        <identifier>private.HAPPY_KEYOUT.A_PAD</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::A,
+
+            @begin
+            KeyCode::VK_CONFIG_FORCE_ON_notsave_A_PAD_FOR_NUMPAD,
+            KeyCode::VK_CONFIG_FORCE_ON_notsave_A_PAD_FOR_INSERT_LINE,
+            @end
+
+            @begin
+            KeyCode::A,
+            @end
+
+            Option::KEYTOKEY_AFTER_KEYUP,
+            KeyCode::VK_CONFIG_FORCE_OFF_notsave_A_PAD_FOR_NUMPAD,
+            KeyCode::VK_CONFIG_FORCE_OFF_notsave_A_PAD_FOR_INSERT_LINE
+        </autogen>
+    </item>
+
+    <!-- QWERTYUIOP[] -->
+
+
+<!-- W_WANDER is on the way -->
+<!--
+     <item>
+        <name>Ative W_WANDER</name>
+        <identifier>private.HAPPY_KEYOUT.W_WANDER</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::W,
+
+            @begin
+            KeyCode::VK_NONE,
+            @end
+
+            @begin
+            KeyCode::W,
+            @end
+
+            Option::KEYTOKEY_AFTER_KEYUP,
+            KeyCode::VK_NONE
+        </autogen>
+    </item>
+-->
+
+<!-- Q_QUICK is on the way -->
+<!-- 
+    <item>
+        <name>Ative Q_QUICK</name>
+        <identifier>private.HAPPY_KEYOUT.Q_QUICK</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::Q,
+
+            @begin
+            KeyCode::VK_NONE,
+            @end
+
+            @begin
+            KeyCode::Q,
+            @end
+
+            Option::KEYTOKEY_AFTER_KEYUP,
+            KeyCode::VK_NONE
+        </autogen>
+    </item>
+ -->
+
+    <!-- ZXCVBNM,./ -->
+    <item>
+        <name>Active V_VIMIUM</name>
+        <identifier>private.HAPPY_KEYOUT.V_VIMIUM</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::V,
+
+            @begin
+            KeyCode::VK_CONFIG_FORCE_ON_notsave_V_VIMIUM_FOR_VIMKEYS,
+            @end
+
+            @begin
+            KeyCode::V,
+            @end
+
+            Option::KEYTOKEY_AFTER_KEYUP,
+            KeyCode::VK_CONFIG_FORCE_OFF_notsave_V_VIMIUM_FOR_VIMKEYS
+        </autogen>
+    </item>
+
+<!-- X_EXTRA is on the way -->
+<!-- 
+    <item>
+        <name>Ative X_EXTRA</name>
+        <identifier>private.HAPPY_KEYOUT.X_EXTRA</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::X,
+
+            @begin
+            KeyCode::VK_NONE,
+            @end
+
+            @begin
+            KeyCode::X,
+            @end
+
+            Option::KEYTOKEY_AFTER_KEYUP,
+            KeyCode::VK_NONE
+        </autogen>
+    </item>
+ -->
+
+<!-- SUPER_SPACE is on the way -->
+<!--
+     <item>
+        <name>Ative SUPER_SPACE</name>
+        <identifier>private.HAPPY_KEYOUT.SUPER_SPACE</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::SPACE,
+
+            @begin
+            KeyCode::VK_NONE,
+            @end
+
+            @begin
+            KeyCode::SPACE,
+            @end
+
+            Option::KEYTOKEY_AFTER_KEYUP,
+            KeyCode::VK_NONE
+        </autogen>
+    </item>
+-->
+</root>

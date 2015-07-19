@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>H_HYPER modifier: ** require ** H_HYPER activated</name>
+        <!-- To be continued -->
+        <item>
+            <name>Program Keys</name>
+            <appendix>【 T => | 】</appendix>
+            <appendix>【 R => \ 】</appendix>
+            <appendix>【 E => = 】</appendix>
+            <appendix>【 W => + 】</appendix>
+            <appendix>【 Q => _ 】</appendix>
+            <identifier vk_config="true">notsave.H_HYPER_FOR_PROGRAMKEYS</identifier>
+
+            <autogen>__BlockUntilKeyUp__ KeyCode::H</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::T, KeyCode::BACKSLASH, VK_SHIFT</autogen>
+            <autogen>__KeyToKey__ KeyCode::R, KeyCode::BACKSLASH</autogen>
+            <autogen>__KeyToKey__ KeyCode::E, KeyCode::EQUAL</autogen>
+            <autogen>__KeyToKey__ KeyCode::W, KeyCode::EQUAL, VK_SHIFT</autogen>
+            <autogen>__KeyToKey__ KeyCode::Q, KeyCode::MINUS, VK_SHIFT</autogen>
+        </item>
+    </item>
+</root>

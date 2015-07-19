@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>A_PAD modifier: ** require ** A_PAD activated</name>
+        <item>
+            <name>Hold A_PAD to simulate active NUMPAD</name>
+<!--             <appendix>【 "NM,.JKLUIO" => "0123456789"】</appendix>
+            <appendix>【 "YH" => "del, return"】</appendix>
+            <appendix>【 "p;['/" => "+-*/."】</appendix> -->
+            <appendix>【 Y => FORWARD_DELETE 】</appendix>
+            <appendix>【 H => RETURN 】</appendix>
+            <identifier vk_config="true">notsave.A_PAD_FOR_NUMPAD</identifier>
+
+            <autogen>__BlockUntilKeyUp__ KeyCode::A</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::NONE, KeyCode::DELETE</autogen>
+            <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | ModifierFlag::NONE, KeyCode::FORWARD_DELETE</autogen>
+            <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::NONE, KeyCode::RETURN</autogen>
+        </item>
+
+        <item>
+            <name>Insert Line below or above</name>
+            <appendix>【 A_PAD + SHIFT + H => Insert a new line below 】</appendix>
+            <appendix>【 A_PAD + SHIFT + CONTROL + H => Insert a new line above 】</appendix>
+            <identifier vk_config="true">notsave.A_PAD_FOR_INSERT_LINE</identifier>
+
+            <autogen>__BlockUntilKeyUp__ KeyCode::A</autogen>
+
+            <autogen>
+                __KeyToKey__
+                KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, ModifierFlag::NONE,
+                KeyCode::E, VK_CONTROL, KeyCode::RETURN
+            </autogen>
+            <autogen>
+                __KeyToKey__
+                KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | ModifierFlag::NONE,
+                KeyCode::P, VK_CONTROL, KeyCode::E, VK_CONTROL, KeyCode::RETURN
+            </autogen>
+        </item>
+
+    </item>
+</root>

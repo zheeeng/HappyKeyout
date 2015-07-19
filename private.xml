@@ -1,201 +1,28 @@
 <?xml version="1.0"?>
 <root>
     <item>
-        <name>⌘: F_SUPER, J_HYPER and A_ULTRA</name>
+        <name>⌘: HAPPY LAZY CON'S KEYBOARD LAYOUT</name>
+        <appendix>【Q_QUICK, W_WANDER, E_null, R_null, T_null, Y_null, U_ULTRA, I_null, O_null, P_POWER】</appendix>
+        <appendix>【A_PAD, S_SHIFT, D_OPT, F_CMD, G_GUIDE, H_HYPER, J_CMD, K_OPT, L_SHIFT, SEMICOLON_CTRL】</appendix>
+        <appendix>【Z_ZIG, X_EXTRA, C_null, V_VIMIUM, B_null}, N_NEWBIE, M_null, COMMA_null, DOT_null】</appendix>
+        <appendix>【SPACE_SUPER】</appendix>
 
-        <item>
-            <name>Active F_SUPER</name>
-            <identifier>private.super_hyper_ultra.F_SUPER</identifier>
-            <autogen>
-                __KeyOverlaidModifier__
-                KeyCode::F
+        <include path='./happykeyout/activemodifiers.xml'/>
+        <include path='./happykeyout/guideg.xml'/>
+        <include path='./happykeyout/hyperh.xml'/>
+        <include path='./happykeyout/numpada.xml'/>
 
-                @begin
-                KeyCode::VK_CONFIG_FORCE_ON_notsave_F_SUPER_FOR_ARROWS,
-                KeyCode::VK_CONFIG_FORCE_ON_notsave_F_SUPER_FOR_PAGE,
-                KeyCode::VK_CONFIG_FORCE_ON_notsave_F_SUPER_FOR_LINE,
-                @end
+        <include path='./happykeyout/wanderw.xml'/>
+        <include path='./happykeyout/ultrau.xml'/>
+        <include path='./happykeyout/quickq.xml'/>
+        <include path='./happykeyout/powerp.xml'/>
 
-                @begin
-                KeyCode::F,
-                @end
+        <include path='./happykeyout/vimiumv.xml'/>
+        <include path='./happykeyout/extrax.xml'/>
+        <include path='./happykeyout/newbien.xml'/>
+        <include path='./happykeyout/zigz.xml'/>
 
-                Option::KEYTOKEY_AFTER_KEYUP,
-                KeyCode::VK_CONFIG_FORCE_OFF_notsave_F_SUPER_FOR_ARROWS,
-                KeyCode::VK_CONFIG_FORCE_OFF_notsave_F_SUPER_FOR_PAGE,
-                KeyCode::VK_CONFIG_FORCE_OFF_notsave_F_SUPER_FOR_LINE
-            </autogen>
-        </item>
-
-        <item>
-            <name>Active J_HYPER</name>
-            <identifier>private.super_hyper_ultra.J_HYPER</identifier>
-            <autogen>
-                __KeyOverlaidModifier__
-                KeyCode::J
-
-                @begin
-                KeyCode::VK_CONFIG_FORCE_ON_notsave_J_HYPER_FOR_SELECTION,
-                KeyCode::VK_CONFIG_FORCE_ON_notsave_J_HYPER_FOR_PROGRAM,
-                @end
-
-                @begin
-                KeyCode::J,
-                @end
-
-                Option::KEYTOKEY_AFTER_KEYUP,
-                KeyCode::VK_CONFIG_FORCE_OFF_notsave_J_HYPER_FOR_SELECTION,
-                KeyCode::VK_CONFIG_FORCE_OFF_notsave_J_HYPER_FOR_PROGRAM
-            </autogen>
-        </item>
-
-        <item>
-            <name>Ative A_ULTRA</name>
-            <identifier>private.super_hyper_ultra.A_ULTRA</identifier>
-            <autogen>
-                __KeyOverlaidModifier__
-                KeyCode::A
-
-                @begin
-                KeyCode::VK_CONFIG_FORCE_ON_notsave_A_ULTRA_FOR_VIM,
-                @end
-
-                @begin
-                KeyCode::A,
-                @end
-
-                Option::KEYTOKEY_AFTER_KEYUP,
-                KeyCode::VK_CONFIG_FORCE_OFF_notsave_A_ULTRA_FOR_VIM
-            </autogen>
-        </item>
-
-        <item>
-            <name>F_SUPER modifier: ** require ** F_SUPER activated</name>
-
-            <item>
-                <name>Cursor Movement</name>
-                <appendix>【 H => Move left 】</appendix>
-                <appendix>【 J => Move up 】</appendix>
-                <appendix>【 K => Move down 】</appendix>
-                <appendix>【 L => Move right 】</appendix>
-                <identifier vk_config="true">notsave.F_SUPER_FOR_ARROWS</identifier>
-
-                <autogen>__BlockUntilKeyUp__ KeyCode::F</autogen>
-
-                <autogen>__KeyToKey__ KeyCode::H, KeyCode::CURSOR_LEFT</autogen>
-                <autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_UP</autogen>
-                <autogen>__KeyToKey__ KeyCode::K, KeyCode::CURSOR_DOWN</autogen>
-                <autogen>__KeyToKey__ KeyCode::L, KeyCode::CURSOR_RIGHT</autogen>
-            </item>
-
-            <item>
-                <name>Page Movement</name>
-                <appendix>【 Y => Page UP 】</appendix>
-                <appendix>【 U => Page Down 】</appendix>
-                <appendix>【 N => Home 】</appendix>
-                <appendix>【 M => End 】</appendix>
-                <identifier vk_config="true">notsave.F_SUPER_FOR_PAGE</identifier>
-
-                <autogen>__BlockUntilKeyUp__ KeyCode::F</autogen>
-
-                <autogen>__KeyToKey__ KeyCode::Y, KeyCode::PAGEUP</autogen>
-                <autogen>__KeyToKey__ KeyCode::U, KeyCode::PAGEDOWN</autogen>
-                <autogen>__KeyToKey__ KeyCode::N, KeyCode::HOME</autogen>
-                <autogen>__KeyToKey__ KeyCode::M, KeyCode::END</autogen>
-            </item>
-
-            <item>
-                <name>Insert Line</name>
-                <appendix>【 F_SUPER + RETURN => Insert a new line below 】</appendix>
-                <appendix>【 F_SUPER + SHIFT + RETURN => Insert a new line above 】</appendix>
-                <identifier vk_config="true">notsave.F_SUPER_FOR_LINE</identifier>
-
-                <autogen>__BlockUntilKeyUp__ KeyCode::F</autogen>
-
-                <autogen>__KeyToKey__ KeyCode::RETURN, ModifierFlag::NONE, KeyCode::E,
-                    MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::RETURN
-                </autogen>
-                <autogen>
-                    __KeyToKey__
-                    KeyCode::RETURN, ModifierFlag::SHIFT_L | ModifierFlag::NONE,
-                    KeyCode::P, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::E,
-                    MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::RETURN
-                </autogen>
-            </item>
-        </item>
-
-        <item>
-            <name>J_HYPER modifier: ** require ** J_HYPER activated</name>
-
-            <item>
-                <name>Word or Line Selection</name>
-                <appendix>【 S => Move backward to next word 】</appendix>
-                <appendix>【 G => Move forward to next word 】</appendix>
-                <appendix>【 F => Move to end of line 】</appendix>
-                <appendix>【 D => Move to first character on line 】</appendix>
-                <identifier vk_config="true">notsave.J_HYPER_FOR_SELECTION</identifier>
-
-                <autogen>__BlockUntilKeyUp__ KeyCode::J</autogen>
-
-                <autogen>__KeyToKey__ KeyCode::S, KeyCode::CURSOR_LEFT, VK_OPTION</autogen>
-                <autogen>__KeyToKey__ KeyCode::D, KeyCode::CURSOR_LEFT, VK_COMMAND</autogen>
-                <autogen>__KeyToKey__ KeyCode::F, KeyCode::CURSOR_RIGHT, VK_COMMAND</autogen>
-                <autogen>__KeyToKey__ KeyCode::G, KeyCode::CURSOR_RIGHT, VK_OPTION</autogen>
-            </item>
-
-            <item>
-                <name>Program Keys</name>
-                <appendix>【 T => | 】</appendix>
-                <appendix>【 R => \ 】</appendix>
-                <appendix>【 E => = 】</appendix>
-                <appendix>【 W => + 】</appendix>
-                <appendix>【 Q => _ 】</appendix>
-                <identifier vk_config="true">notsave.J_HYPER_FOR_PROGRAM</identifier>
-
-                <autogen>__BlockUntilKeyUp__ KeyCode::J</autogen>
-
-                <autogen>__KeyToKey__ KeyCode::T, KeyCode::BACKSLASH, VK_SHIFT</autogen>
-                <autogen>__KeyToKey__ KeyCode::R, KeyCode::BACKSLASH</autogen>
-                <autogen>__KeyToKey__ KeyCode::E, KeyCode::EQUAL</autogen>
-                <autogen>__KeyToKey__ KeyCode::W, KeyCode::EQUAL, VK_SHIFT</autogen>
-                <autogen>__KeyToKey__ KeyCode::Q, KeyCode::MINUS, VK_SHIFT</autogen>
-            </item>
-        </item>
-
-        <item>
-            <name>A_ULTRA modifier: ** require ** A_ULTRA activated</name>
-
-            <item>
-                <name>VIM Shortcuts</name>
-                <appendix>【 YY => yank current line 】</appendix>
-                <appendix>【 DD => delete current line 】</appendix>
-                <appendix>【 PP => paste to next line 】</appendix>
-                <appendix>【 CC => cut current line 】</appendix>
-                <identifier vk_config="true">notsave.A_ULTRA_FOR_VIM</identifier>
-
-                <autogen>__BlockUntilKeyUp__ KeyCode::A</autogen>
-
-                <autogen>__DoublePressModifier__ KeyCode::Y, KeyCode::VK_NONE, KeyCode::CURSOR_LEFT, VK_COMMAND,
-                    KeyCode::CURSOR_RIGHT, VK_SHIFT | VK_COMMAND, KeyCode::C, VK_COMMAND
-                </autogen>
-                <autogen>
-                    __DoublePressModifier__
-                    KeyCode::D,
-                    KeyCode::VK_NONE,
-                    KeyCode::CURSOR_LEFT, VK_COMMAND, KeyCode::CURSOR_RIGHT, VK_SHIFT | VK_COMMAND, KeyCode::X,
-                    VK_COMMAND, KeyCode::DELETE, VK_COMMAND
-                </autogen>
-                <autogen>__DoublePressModifier__ KeyCode::P, KeyCode::VK_NONE, KeyCode::E,
-                    MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::RETURN, KeyCode::V, VK_COMMAND
-                </autogen>
-                <autogen>__DoublePressModifier__ KeyCode::C, KeyCode::VK_NONE, KeyCode::CURSOR_LEFT, VK_COMMAND,
-                    KeyCode::CURSOR_RIGHT, VK_SHIFT | VK_COMMAND, KeyCode::X, VK_COMMAND,
-                </autogen>
-            </item>
-
-
-        </item>
-
+        <include path='./happykeyout/superspace.xml'/>
     </item>
 
 </root>
