@@ -4,14 +4,29 @@
         <name>A_PAD modifier: ** require ** A_PAD activated</name>
         <item>
             <name>Hold A_PAD to simulate active NUMPAD</name>
-<!--             <appendix>【 "NM,.JKLUIO" => "0123456789"】</appendix>
+            <appendix>【 "NM,.JKLUIO" => "0123456789"】</appendix>
             <appendix>【 "YH" => "del, return"】</appendix>
-            <appendix>【 "p;['/" => "+-*/."】</appendix> -->
-            <appendix>【 Y => FORWARD_DELETE 】</appendix>
-            <appendix>【 H => RETURN 】</appendix>
+            <appendix>【 "p;['/" => "+-*/."】</appendix>
             <identifier vk_config="true">notsave.A_PAD_FOR_NUMPAD</identifier>
 
             <autogen>__BlockUntilKeyUp__ KeyCode::A</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::N, KeyCode::KEYPAD_0</autogen>
+            <autogen>__KeyToKey__ KeyCode::M, KeyCode::KEYPAD_1</autogen>
+            <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::KEYPAD_2</autogen>
+            <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::KEYPAD_3</autogen>
+            <autogen>__KeyToKey__ KeyCode::J, KeyCode::KEYPAD_4</autogen>
+            <autogen>__KeyToKey__ KeyCode::K, KeyCode::KEYPAD_5</autogen>
+            <autogen>__KeyToKey__ KeyCode::L, KeyCode::KEYPAD_6</autogen>
+            <autogen>__KeyToKey__ KeyCode::U, KeyCode::KEYPAD_7</autogen>
+            <autogen>__KeyToKey__ KeyCode::I, KeyCode::KEYPAD_8</autogen>
+            <autogen>__KeyToKey__ KeyCode::O, KeyCode::KEYPAD_9</autogen>
+
+            <autogen>__KeyToKey__ KeyCode::P, KeyCode::KEYPAD_PLUS</autogen>
+            <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::KEYPAD_MINUS</autogen>
+            <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, KeyCode::KEYPAD_MULTIPLY</autogen>
+            <autogen>__KeyToKey__ KeyCode::QUOTE, KeyCode::KEYPAD_SLASH</autogen>
+            <autogen>__KeyToKey__ KeyCode::SLASH, KeyCode::KEYPAD_DOT</autogen>
 
             <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::NONE, KeyCode::DELETE</autogen>
             <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | ModifierFlag::NONE, KeyCode::FORWARD_DELETE</autogen>

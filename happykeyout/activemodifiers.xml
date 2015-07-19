@@ -2,13 +2,15 @@
 <root>
     <!-- ASDFGHJKL;' -->
     <item>
-        <name>Active S_SHIFT, D_OPT, F_CMD, J_CMD, K_OPT, L_SHIFT, SEMICOLON_CTRL</name>
+        <name>Modifiers Remap</name>
+        <appendix>【A】【S_SHIFT】【D_OPT】【F】【G】【H】【J】【K_OPT】【L_SHIFT】【SEMICOLON_CTRL】【QUOTE】</appendix>
+        <appendix>【Z】【X】【C_CMD)】【V】【B】【N】【M_META】【COMMA】【DOT】【SLASH】</appendix>
         <identifier>private.HAPPY_KEYOUT.HANDY_MODIFIER</identifier>
 
         <autogen>__KeyOverlaidModifier__ KeyCode::S, KeyCode::SHIFT_L, KeyCode::S</autogen>
         <autogen>__KeyOverlaidModifier__ KeyCode::D, KeyCode::OPTION_L, KeyCode::D</autogen>
-        <autogen>__KeyOverlaidModifier__ KeyCode::F, KeyCode::COMMAND_L, KeyCode::F</autogen>
-        <autogen>__KeyOverlaidModifier__ KeyCode::J, KeyCode::COMMAND_R, KeyCode::J</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::C, KeyCode::COMMAND_L, KeyCode::C</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::M, KeyCode::COMMAND_R, KeyCode::M</autogen>
         <autogen>__KeyOverlaidModifier__ KeyCode::K, KeyCode::OPTION_R, KeyCode::K</autogen>
         <autogen>__KeyOverlaidModifier__ KeyCode::L, KeyCode::SHIFT_R, KeyCode::L</autogen>
         <autogen>__KeyOverlaidModifier__ KeyCode::SEMICOLON, KeyCode::SHIFT_L, KeyCode::SEMICOLON,</autogen>
@@ -16,24 +18,25 @@
         <block>
             <autogen>__BlockUntilKeyUp__ KeyCode::S</autogen>
             <autogen>__BlockUntilKeyUp__ KeyCode::D</autogen>
-            <autogen>__BlockUntilKeyUp__ KeyCode::F</autogen>
-            <autogen>__BlockUntilKeyUp__ KeyCode::J</autogen>
+            <autogen>__BlockUntilKeyUp__ KeyCode::C</autogen>
+            <autogen>__BlockUntilKeyUp__ KeyCode::M</autogen>
             <autogen>__BlockUntilKeyUp__ KeyCode::K</autogen>
             <autogen>__BlockUntilKeyUp__ KeyCode::L</autogen>
             <autogen>__BlockUntilKeyUp__ KeyCode::SEMICOLON</autogen>
         </block>
     </item>
 
-    <item>
-        <name>Active G_GUIDE</name>
+<!-- G_GUIDE is on the way -->
+<!--
+     <item>
+        <name>Ative G_GUIDE</name>
         <identifier>private.HAPPY_KEYOUT.G_GUIDE</identifier>
         <autogen>
             __KeyOverlaidModifier__
             KeyCode::G,
 
             @begin
-            KeyCode::VK_CONFIG_FORCE_ON_notsave_G_GUIDE_FOR_ARROWS,
-            KeyCode::VK_CONFIG_FORCE_ON_notsave_G_GUIDE_FOR_PAGE,
+            KeyCode::VK_NONE,
             @end
 
             @begin
@@ -41,20 +44,22 @@
             @end
 
             Option::KEYTOKEY_AFTER_KEYUP,
-            KeyCode::VK_CONFIG_FORCE_OFF_notsave_G_GUIDE_FOR_ARROWS,
-            KeyCode::VK_CONFIG_FORCE_OFF_notsave_G_GUIDE_FOR_PAGE
+            KeyCode::VK_NONE
         </autogen>
     </item>
+-->
 
-    <item>
-        <name>Active H_HYPER</name>
+<!-- H_HYPER is on the way -->
+<!--
+     <item>
+        <name>Ative H_HYPER</name>
         <identifier>private.HAPPY_KEYOUT.H_HYPER</identifier>
         <autogen>
             __KeyOverlaidModifier__
             KeyCode::H,
 
             @begin
-            KeyCode::VK_CONFIG_FORCE_ON_notsave_H_HYPER_FOR_PROGRAMKEYS,
+            KeyCode::VK_NONE,
             @end
 
             @begin
@@ -62,7 +67,50 @@
             @end
 
             Option::KEYTOKEY_AFTER_KEYUP,
-            KeyCode::VK_CONFIG_FORCE_OFF_notsave_H_HYPER_FOR_PROGRAMKEYS
+            KeyCode::VK_NONE
+        </autogen>
+    </item>
+-->
+
+    <item>
+        <name>Active F_FANCY</name>
+        <identifier>private.HAPPY_KEYOUT.F_FANCY</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::F,
+
+            @begin
+            KeyCode::VK_CONFIG_FORCE_ON_notsave_F_FANCY_FOR_ARROWS,
+            KeyCode::VK_CONFIG_FORCE_ON_notsave_F_FANCY_FOR_PAGE,
+            @end
+
+            @begin
+            KeyCode::F,
+            @end
+
+            Option::KEYTOKEY_AFTER_KEYUP,
+            KeyCode::VK_CONFIG_FORCE_OFF_notsave_F_FANCY_FOR_ARROWS,
+            KeyCode::VK_CONFIG_FORCE_OFF_notsave_F_FANCY_FOR_PAGE
+        </autogen>
+    </item>
+
+    <item>
+        <name>Active J_JUNIOR</name>
+        <identifier>private.HAPPY_KEYOUT.J_JUNIOR</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::J,
+
+            @begin
+            KeyCode::VK_CONFIG_FORCE_ON_notsave_J_JUNIOR_FOR_PROGRAMKEYS,
+            @end
+
+            @begin
+            KeyCode::J,
+            @end
+
+            Option::KEYTOKEY_AFTER_KEYUP,
+            KeyCode::VK_CONFIG_FORCE_OFF_notsave_J_JUNIOR_FOR_PROGRAMKEYS
         </autogen>
     </item>
 
