@@ -4,12 +4,11 @@
     <item>
         <name>Modifiers Remap</name>
         <appendix>【A】【S_SHIFT】【D_OPT】【F】【G】【H】【J】【K_OPT】【L_SHIFT】【SEMICOLON_CTRL】【QUOTE】</appendix>
-        <appendix>【Z】【X】【C_CMD)】【V】【B】【N】【M_META】【COMMA】【DOT】【SLASH】</appendix>
+        <appendix>【Z】【X】【C】【V】【B】【N】【M_META】【COMMA】【DOT】【SLASH】</appendix>
         <identifier>private.HAPPY_KEYOUT.HANDY_MODIFIER</identifier>
 
         <autogen>__KeyOverlaidModifier__ KeyCode::S, KeyCode::SHIFT_L, KeyCode::S</autogen>
         <autogen>__KeyOverlaidModifier__ KeyCode::D, KeyCode::OPTION_L, KeyCode::D</autogen>
-        <autogen>__KeyOverlaidModifier__ KeyCode::C, KeyCode::COMMAND_L, KeyCode::C</autogen>
         <autogen>__KeyOverlaidModifier__ KeyCode::M, KeyCode::COMMAND_R, KeyCode::M</autogen>
         <autogen>__KeyOverlaidModifier__ KeyCode::K, KeyCode::OPTION_R, KeyCode::K</autogen>
         <autogen>__KeyOverlaidModifier__ KeyCode::L, KeyCode::SHIFT_R, KeyCode::L</autogen>
@@ -18,7 +17,6 @@
         <block>
             <autogen>__BlockUntilKeyUp__ KeyCode::S</autogen>
             <autogen>__BlockUntilKeyUp__ KeyCode::D</autogen>
-            <autogen>__BlockUntilKeyUp__ KeyCode::C</autogen>
             <autogen>__BlockUntilKeyUp__ KeyCode::M</autogen>
             <autogen>__BlockUntilKeyUp__ KeyCode::K</autogen>
             <autogen>__BlockUntilKeyUp__ KeyCode::L</autogen>

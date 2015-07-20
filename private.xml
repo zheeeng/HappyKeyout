@@ -4,7 +4,7 @@
         <name>⌘: HAPPY LAZY CON'S KEYBOARD LAYOUT</name>
         <appendix>【Q_QUICK, W_WANDER, E_null, R_null, T_null, Y_null, U_ULTRA, I_null, O_OVERPLAY, P_POWER】</appendix>
         <appendix>【A_PAD, S_SHIFT, D_OPT, F_FANCY, G_GUIDE, H_HYPER, J_CMD, K_OPT, L_SHIFT, SEMICOLON_CTRL】</appendix>
-        <appendix>【Z_ZIPPO, X_EXTRA, C_CMD, V_VIMIUM, B_null, N_NEWBIE, M_META, COMMA_null, DOT_null】</appendix>
+        <appendix>【Z_ZIPPO, X_EXTRA, C_null, V_VIMIUM, B_null, N_NEWBIE, M_META, COMMA_null, DOT_null】</appendix>
         <appendix>【SPACE_SUPER】</appendix>
 
         <include path='./happykeyout/activemodifiers.xml'/>
