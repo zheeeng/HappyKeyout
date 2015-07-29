@@ -22,37 +22,45 @@
                 KeyCode::E, VK_CONTROL, KeyCode::RETURN
             </autogen>-
         </item>
-
         <item>
             <name>Hold A_PAD to simulate active NUMPAD</name>
-            <appendix>【 "NM,.JKLUIO" => "0123456789"】</appendix>
-            <appendix>【 "YH" => "del, return"】</appendix>
-            <appendix>【 "p;['/" => "+-*/."】</appendix>
+            <appendix>【 M 】=> 【 0 】; 【 , 】 => 【 00 】; 【 . 】=> 【 . 】</appendix>
+            <appendix>【 J 】=> 【 1 】; 【 K 】 => 【 2 】; 【 L 】=> 【 3 】</appendix>
+            <appendix>【 U 】=> 【 4 】; 【 I 】 => 【 5 】; 【 O 】=> 【 6 】</appendix>
+            <appendix>【 KEY_7 】=> 【 7 】; 【 KEY_8 】 => 【 8 】; 【 KEY_9 】=> 【 9 】</appendix>
+            <appendix>【 Y 】=> 【 DEL 】; 【 H 】 => 【 RETURN 】; 【 N 】=> 【 FORWARD_DEL 】</appendix>
+            <appendix>【 p 】=> 【 + 】; 【 ; 】 => 【 - 】; 【 [ 】=> 【 * 】; 【 ' 】 => 【 % 】; 【 / 】 => 【 / 】</appendix>
             <identifier vk_config="true">notsave.A_PAD_FOR_NUMPAD</identifier>
 
             <autogen>__BlockUntilKeyUp__ KeyCode::A</autogen>
 
-            <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::NONE, KeyCode::KEYPAD_0</autogen>
-            <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::NONE, KeyCode::KEYPAD_1</autogen>
-            <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::NONE, KeyCode::KEYPAD_2</autogen>
-            <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::NONE, KeyCode::KEYPAD_3</autogen>
-            <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::NONE, KeyCode::KEYPAD_4</autogen>
-            <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::NONE, KeyCode::KEYPAD_5</autogen>
-            <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::NONE, KeyCode::KEYPAD_6</autogen>
-            <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::NONE, KeyCode::KEYPAD_7</autogen>
-            <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::NONE, KeyCode::KEYPAD_8</autogen>
-            <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::NONE, KeyCode::KEYPAD_9</autogen>
-
-            <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::NONE, KeyCode::KEYPAD_PLUS</autogen>
-            <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::NONE, KeyCode::KEYPAD_MINUS</autogen>
-            <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::NONE, KeyCode::KEYPAD_MULTIPLY</autogen>
-            <autogen>__KeyToKey__ KeyCode::QUOTE, ModifierFlag::NONE, KeyCode::KEYPAD_SLASH</autogen>
-            <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::NONE, KeyCode::KEYPAD_DOT</autogen>
+            <autogen>__KeyToKey__ KeyCode::M, KeyCode::KEYPAD_0</autogen>
+            <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::KEYPAD_0, KeyCode::KEYPAD_0</autogen>
+            <autogen>__KeyToKey__ KeyCode::J, KeyCode::KEYPAD_1</autogen>
+            <autogen>__KeyToKey__ KeyCode::K, KeyCode::KEYPAD_2</autogen>
+            <autogen>__KeyToKey__ KeyCode::L, KeyCode::KEYPAD_3</autogen>
+            <autogen>__KeyToKey__ KeyCode::U, KeyCode::KEYPAD_4</autogen>
+            <autogen>__KeyToKey__ KeyCode::I, KeyCode::KEYPAD_5</autogen>
+            <autogen>__KeyToKey__ KeyCode::O, KeyCode::KEYPAD_6</autogen>
+            <autogen>__KeyToKey__ KeyCode::KEY_7, KeyCode::KEYPAD_7</autogen>
+            <autogen>__KeyToKey__ KeyCode::KEY_8, KeyCode::KEYPAD_8</autogen>
+            <autogen>__KeyToKey__ KeyCode::KEY_9, KeyCode::KEYPAD_9</autogen>
+            <autogen>__KeyToKey__ KeyCode::P, KeyCode::KEYPAD_PLUS</autogen>
+            <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::KEYPAD_MINUS</autogen>
+            <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, KeyCode::KEYPAD_MULTIPLY</autogen>
+            <autogen>__KeyToKey__ KeyCode::QUOTE, KeyCode::KEY_5, VK_SHIFT</autogen>
+            <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::KEYPAD_DOT</autogen>
+            <autogen>__KeyToKey__ KeyCode::SLASH, KeyCode::KEYPAD_SLASH</autogen>
 
             <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::FORWARD_DELETE</autogen>
             <autogen>__KeyToKey__ KeyCode::Y, KeyCode::DELETE</autogen>
+            <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::DELETE</autogen>
+            <autogen>__KeyToKey__ KeyCode::N, KeyCode::FORWARD_DELETE</autogen>
             <autogen>__KeyToKey__ KeyCode::H, KeyCode::RETURN</autogen>
         </item>
+
+
+
 
 
 
