@@ -14,12 +14,12 @@
             <autogen>
                 __KeyToKey__
                 KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
-                KeyCode::P, VK_CONTROL, KeyCode::E, VK_CONTROL, KeyCode::RETURN
+                KeyCode::CURSOR_UP, KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN
             </autogen>
             <autogen>
                 __KeyToKey__
                 KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
-                KeyCode::E, VK_CONTROL, KeyCode::RETURN
+                KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN
             </autogen>-
         </item>
         <item>
