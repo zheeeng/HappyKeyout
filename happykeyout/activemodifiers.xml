@@ -3,12 +3,11 @@
     <!-- ASDFGHJKL;' -->
     <item>
         <name>Modifiers Remap</name>
-        <appendix>【A】【S_SHIFT】【D_OPT】【F】【G】【H】【J】【K_OPT】【L_SHIFT】【SEMICOLON_CTRL】【QUOTE】</appendix>
+        <appendix>【A】【S_SHIFT】【D_DIVINE】【F】【G】【H】【J】【K_OPT】【L_SHIFT】【SEMICOLON_CTRL】【QUOTE】</appendix>
         <appendix>【Z】【X】【C】【V】【B】【N】【M_META】【COMMA】【DOT】【SLASH】</appendix>
         <identifier>private.HAPPY_KEYOUT.HANDY_MODIFIER</identifier>
 
         <autogen>__KeyOverlaidModifier__ KeyCode::S, KeyCode::SHIFT_L, KeyCode::S</autogen>
-        <autogen>__KeyOverlaidModifier__ KeyCode::D, KeyCode::OPTION_L, KeyCode::D</autogen>
         <autogen>__KeyOverlaidModifier__ KeyCode::M, KeyCode::COMMAND_R, KeyCode::M</autogen>
         <autogen>__KeyOverlaidModifier__ KeyCode::K, KeyCode::OPTION_R, KeyCode::K</autogen>
         <autogen>__KeyOverlaidModifier__ KeyCode::L, KeyCode::SHIFT_R, KeyCode::L</autogen>
@@ -16,7 +15,6 @@
 
         <block>
             <autogen>__BlockUntilKeyUp__ KeyCode::S</autogen>
-            <autogen>__BlockUntilKeyUp__ KeyCode::D</autogen>
             <autogen>__BlockUntilKeyUp__ KeyCode::M</autogen>
             <autogen>__BlockUntilKeyUp__ KeyCode::K</autogen>
             <autogen>__BlockUntilKeyUp__ KeyCode::L</autogen>
@@ -78,17 +76,12 @@
             KeyCode::F,
 
             @begin
-            KeyCode::VK_CONFIG_FORCE_ON_notsave_F_FANCY_FOR_ARROWS,
-            KeyCode::VK_CONFIG_FORCE_ON_notsave_F_FANCY_FOR_PAGE,
+            KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_F_FANCY_FOR_CURSOR,
             @end
 
             @begin
-            KeyCode::F,
+            KeyCode::F
             @end
-
-            Option::KEYTOKEY_AFTER_KEYUP,
-            KeyCode::VK_CONFIG_FORCE_OFF_notsave_F_FANCY_FOR_ARROWS,
-            KeyCode::VK_CONFIG_FORCE_OFF_notsave_F_FANCY_FOR_PAGE
         </autogen>
     </item>
 
@@ -100,15 +93,29 @@
             KeyCode::J,
 
             @begin
-            KeyCode::VK_CONFIG_FORCE_ON_notsave_J_JUNIOR_FOR_PROGRAMKEYS,
+            KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_J_JUNIOR_FOR_PROGRAMKEYS,
             @end
 
             @begin
-            KeyCode::J,
+            KeyCode::J
+            @end
+        </autogen>
+    </item>
+
+    <item>
+        <name>Activate D_DIVINED</name>
+        <identifier>private.HAPPY_KEYOUT.D_DIVINED</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::D,
+
+            @begin
+            KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_D_DIVINED_FOR_MOUSE,
             @end
 
-            Option::KEYTOKEY_AFTER_KEYUP,
-            KeyCode::VK_CONFIG_FORCE_OFF_notsave_J_JUNIOR_FOR_PROGRAMKEYS
+            @begin
+            KeyCode::D
+            @end
         </autogen>
     </item>
 
@@ -120,17 +127,12 @@
             KeyCode::A,
 
             @begin
-            KeyCode::VK_CONFIG_FORCE_ON_notsave_A_PAD_FOR_NUMPAD,
-            KeyCode::VK_CONFIG_FORCE_ON_notsave_A_PAD_FOR_INSERT_LINE,
+            KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_A_PAD_FOR_NUMPAD,
             @end
 
             @begin
-            KeyCode::A,
+            KeyCode::A
             @end
-
-            Option::KEYTOKEY_AFTER_KEYUP,
-            KeyCode::VK_CONFIG_FORCE_OFF_notsave_A_PAD_FOR_NUMPAD,
-            KeyCode::VK_CONFIG_FORCE_OFF_notsave_A_PAD_FOR_INSERT_LINE
         </autogen>
     </item>
 
@@ -151,11 +153,8 @@
             @end
 
             @begin
-            KeyCode::W,
+            KeyCode::W
             @end
-
-            Option::KEYTOKEY_AFTER_KEYUP,
-            KeyCode::VK_NONE
         </autogen>
     </item>
 -->
@@ -174,11 +173,8 @@
             @end
 
             @begin
-            KeyCode::Q,
+            KeyCode::Q
             @end
-
-            Option::KEYTOKEY_AFTER_KEYUP,
-            KeyCode::VK_NONE
         </autogen>
     </item>
  -->
@@ -192,15 +188,12 @@
             KeyCode::V,
 
             @begin
-            KeyCode::VK_CONFIG_FORCE_ON_notsave_V_VIMIUM_FOR_VIMKEYS,
+            KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_V_VIMIUM_FOR_VIMKEYS,
             @end
 
             @begin
-            KeyCode::V,
+            KeyCode::V
             @end
-
-            Option::KEYTOKEY_AFTER_KEYUP,
-            KeyCode::VK_CONFIG_FORCE_OFF_notsave_V_VIMIUM_FOR_VIMKEYS
         </autogen>
     </item>
 
@@ -218,11 +211,8 @@
             @end
 
             @begin
-            KeyCode::X,
+            KeyCode::X
             @end
-
-            Option::KEYTOKEY_AFTER_KEYUP,
-            KeyCode::VK_NONE
         </autogen>
     </item>
  -->
@@ -241,11 +231,8 @@
             @end
 
             @begin
-            KeyCode::SPACE,
+            KeyCode::SPACE
             @end
-
-            Option::KEYTOKEY_AFTER_KEYUP,
-            KeyCode::VK_NONE
         </autogen>
     </item>
 -->

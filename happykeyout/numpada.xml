@@ -4,10 +4,16 @@
         <name>A_PAD modifier: ** require ** A_PAD activated</name>
 
         <item>
-            <name>Insert Line below or above</name>
+            <name>Hold A_PAD to simulate active NUMPAD</name>
+            <appendix>【 M 】=> 【 0 】; 【 , 】 => 【 00 】; 【 . 】=> 【 . 】</appendix>
+            <appendix>【 J 】=> 【 1 】; 【 K 】 => 【 2 】; 【 L 】=> 【 3 】</appendix>
+            <appendix>【 U 】=> 【 4 】; 【 I 】 => 【 5 】; 【 O 】=> 【 6 】</appendix>
+            <appendix>【 KEY_7 】=> 【 7 】; 【 KEY_8 】 => 【 8 】; 【 KEY_9 】=> 【 9 】</appendix>
+            <appendix>【 Y 】=> 【 DEL 】; 【 H 】 => 【 RETURN 】; 【 N 】=> 【 FORWARD_DEL 】</appendix>
+            <appendix>【 p 】=> 【 + 】; 【 ; 】 => 【 - 】; 【 [ 】=> 【 * 】; 【 ' 】 => 【 % 】; 【 / 】 => 【 / 】</appendix>
             <appendix>【 A_PAD + SHIFT + H => Insert a new line below 】</appendix>
             <appendix>【 A_PAD + SHIFT + CONTROL + H => Insert a new line above 】</appendix>
-            <identifier vk_config="true">notsave.A_PAD_FOR_INSERT_LINE</identifier>
+            <identifier vk_config="true">notsave.A_PAD_FOR_NUMPAD</identifier>
 
             <autogen>__BlockUntilKeyUp__ KeyCode::A</autogen>
 
@@ -21,18 +27,6 @@
                 KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
                 KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN
             </autogen>-
-        </item>
-        <item>
-            <name>Hold A_PAD to simulate active NUMPAD</name>
-            <appendix>【 M 】=> 【 0 】; 【 , 】 => 【 00 】; 【 . 】=> 【 . 】</appendix>
-            <appendix>【 J 】=> 【 1 】; 【 K 】 => 【 2 】; 【 L 】=> 【 3 】</appendix>
-            <appendix>【 U 】=> 【 4 】; 【 I 】 => 【 5 】; 【 O 】=> 【 6 】</appendix>
-            <appendix>【 KEY_7 】=> 【 7 】; 【 KEY_8 】 => 【 8 】; 【 KEY_9 】=> 【 9 】</appendix>
-            <appendix>【 Y 】=> 【 DEL 】; 【 H 】 => 【 RETURN 】; 【 N 】=> 【 FORWARD_DEL 】</appendix>
-            <appendix>【 p 】=> 【 + 】; 【 ; 】 => 【 - 】; 【 [ 】=> 【 * 】; 【 ' 】 => 【 % 】; 【 / 】 => 【 / 】</appendix>
-            <identifier vk_config="true">notsave.A_PAD_FOR_NUMPAD</identifier>
-
-            <autogen>__BlockUntilKeyUp__ KeyCode::A</autogen>
 
             <autogen>__KeyToKey__ KeyCode::M, KeyCode::KEYPAD_0</autogen>
             <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::KEYPAD_0, KeyCode::KEYPAD_0</autogen>
@@ -57,12 +51,8 @@
             <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::DELETE</autogen>
             <autogen>__KeyToKey__ KeyCode::N, KeyCode::FORWARD_DELETE</autogen>
             <autogen>__KeyToKey__ KeyCode::H, KeyCode::RETURN</autogen>
+
         </item>
-
-
-
-
-
 
     </item>
 </root>
