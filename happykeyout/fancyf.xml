@@ -1,8 +1,5 @@
 <?xml version="1.0"?>
 <root>
-
-    <modifierdef>HAPPY_JUMP</modifierdef>
-
     <item>
         <name>F_FANCY modifier: ** require ** F_FANCY activated</name>
 
@@ -52,6 +49,8 @@
 
             <!-- hyper -->
             <autogen>__KeyToKey__ KeyCode::D, KeyCode::VK_MODIFIER_HAPPY_JUMP</autogen>
+
+            {{ HAPPY_RETURN }}
 
         </item>
 

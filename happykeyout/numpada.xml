@@ -17,40 +17,30 @@
 
             <autogen>__BlockUntilKeyUp__ KeyCode::A</autogen>
 
-            <autogen>
-                __KeyToKey__
-                KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
-                KeyCode::CURSOR_UP, KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN
-            </autogen>
-            <autogen>
-                __KeyToKey__
-                KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
-                KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN
-            </autogen>-
+            <block>
+                <autogen>__KeyToKey__ KeyCode::M, KeyCode::KEYPAD_0</autogen>
+                <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::KEYPAD_0, KeyCode::KEYPAD_0</autogen>
+                <autogen>__KeyToKey__ KeyCode::J, KeyCode::KEYPAD_1</autogen>
+                <autogen>__KeyToKey__ KeyCode::K, KeyCode::KEYPAD_2</autogen>
+                <autogen>__KeyToKey__ KeyCode::L, KeyCode::KEYPAD_3</autogen>
+                <autogen>__KeyToKey__ KeyCode::U, KeyCode::KEYPAD_4</autogen>
+                <autogen>__KeyToKey__ KeyCode::I, KeyCode::KEYPAD_5</autogen>
+                <autogen>__KeyToKey__ KeyCode::O, KeyCode::KEYPAD_6</autogen>
+                <autogen>__KeyToKey__ KeyCode::KEY_7, KeyCode::KEYPAD_7</autogen>
+                <autogen>__KeyToKey__ KeyCode::KEY_8, KeyCode::KEYPAD_8</autogen>
+                <autogen>__KeyToKey__ KeyCode::KEY_9, KeyCode::KEYPAD_9</autogen>
+            </block>
 
-            <autogen>__KeyToKey__ KeyCode::M, KeyCode::KEYPAD_0</autogen>
-            <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::KEYPAD_0, KeyCode::KEYPAD_0</autogen>
-            <autogen>__KeyToKey__ KeyCode::J, KeyCode::KEYPAD_1</autogen>
-            <autogen>__KeyToKey__ KeyCode::K, KeyCode::KEYPAD_2</autogen>
-            <autogen>__KeyToKey__ KeyCode::L, KeyCode::KEYPAD_3</autogen>
-            <autogen>__KeyToKey__ KeyCode::U, KeyCode::KEYPAD_4</autogen>
-            <autogen>__KeyToKey__ KeyCode::I, KeyCode::KEYPAD_5</autogen>
-            <autogen>__KeyToKey__ KeyCode::O, KeyCode::KEYPAD_6</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_7, KeyCode::KEYPAD_7</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_8, KeyCode::KEYPAD_8</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_9, KeyCode::KEYPAD_9</autogen>
-            <autogen>__KeyToKey__ KeyCode::P, KeyCode::KEYPAD_PLUS</autogen>
-            <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::KEYPAD_MINUS</autogen>
-            <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, KeyCode::KEYPAD_MULTIPLY</autogen>
-            <autogen>__KeyToKey__ KeyCode::QUOTE, KeyCode::KEY_5, VK_SHIFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::KEYPAD_DOT</autogen>
-            <autogen>__KeyToKey__ KeyCode::SLASH, KeyCode::KEYPAD_SLASH</autogen>
+            <block>
+                <autogen>__KeyToKey__ KeyCode::P, KeyCode::KEYPAD_PLUS</autogen>
+                <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::KEYPAD_MINUS</autogen>
+                <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, KeyCode::KEYPAD_MULTIPLY</autogen>
+                <autogen>__KeyToKey__ KeyCode::QUOTE, KeyCode::KEY_5, VK_SHIFT</autogen>
+                <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::KEYPAD_DOT</autogen>
+                <autogen>__KeyToKey__ KeyCode::SLASH, KeyCode::KEYPAD_SLASH</autogen>
+            </block>
 
-            <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::FORWARD_DELETE</autogen>
-            <autogen>__KeyToKey__ KeyCode::Y, KeyCode::DELETE</autogen>
-            <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::DELETE</autogen>
-            <autogen>__KeyToKey__ KeyCode::N, KeyCode::FORWARD_DELETE</autogen>
-            <autogen>__KeyToKey__ KeyCode::H, KeyCode::RETURN</autogen>
+            {{ HAPPY_RETURN }}
 
         </item>
 

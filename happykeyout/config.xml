@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<root>
+
+    <replacementdef>
+        <replacementname>HAPPY_RETURN</replacementname>
+        <replacementvalue>
+            <![CDATA[
+                <block>
+                    <autogen>
+                        __KeyToKey__
+                        KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+                        KeyCode::CURSOR_UP, KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN
+                    </autogen>
+                    <autogen>
+                        __KeyToKey__
+                        KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+                        KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN
+                    </autogen>
+                </block>
+
+                <block>
+                    <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::FORWARD_DELETE</autogen>
+                    <autogen>__KeyToKey__ KeyCode::Y, KeyCode::DELETE</autogen>
+                    <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::DELETE</autogen>
+                    <autogen>__KeyToKey__ KeyCode::N, KeyCode::FORWARD_DELETE</autogen>
+                    <autogen>__KeyToKey__ KeyCode::H, KeyCode::RETURN</autogen>
+                </block>
+            ]]>
+        </replacementvalue>
+    </replacementdef>
+
+
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_SHELL_MOUSE_CURSOR_CENTER</name>
+        <url type="shell">
+            <![CDATA[
+                /Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0
+            ]]>
+        </url>
+    </vkopenurldef>
+    
+    <modifierdef>HAPPY_SCROLL</modifierdef>
+    <modifierdef>HAPPY_JUMP</modifierdef>
+
+</root>
