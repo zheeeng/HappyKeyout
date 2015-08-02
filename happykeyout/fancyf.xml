@@ -17,6 +17,11 @@
             <appendix>【 O => Page Down 】</appendix>
             <appendix>【 M => Home 】</appendix>
             <appendix>【 . => End 】</appendix>
+            <appendix>----------------------------------</appendix>
+            <appendix>【 Y 】=> 【 DEL 】; 【 H 】 => 【 RETURN 】; 【 N 】=> 【 FORWARD_DEL 】</appendix>
+            <appendix>【 F_FANCY + SHIFT + H => Insert a new line below 】</appendix>
+            <appendix>【 F_FANCY + SHIFT + CONTROL + H => Insert a new line above 】</appendix>
+
             
             <identifier vk_config="true">notsave.F_FANCY_FOR_CURSOR</identifier>
 

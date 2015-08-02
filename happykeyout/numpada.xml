@@ -9,10 +9,12 @@
             <appendix>【 J 】=> 【 1 】; 【 K 】 => 【 2 】; 【 L 】=> 【 3 】</appendix>
             <appendix>【 U 】=> 【 4 】; 【 I 】 => 【 5 】; 【 O 】=> 【 6 】</appendix>
             <appendix>【 KEY_7 】=> 【 7 】; 【 KEY_8 】 => 【 8 】; 【 KEY_9 】=> 【 9 】</appendix>
-            <appendix>【 Y 】=> 【 DEL 】; 【 H 】 => 【 RETURN 】; 【 N 】=> 【 FORWARD_DEL 】</appendix>
             <appendix>【 p 】=> 【 + 】; 【 ; 】 => 【 - 】; 【 [ 】=> 【 * 】; 【 ' 】 => 【 % 】; 【 / 】 => 【 / 】</appendix>
+            <appendix>----------------------------------</appendix>
+            <appendix>【 Y 】=> 【 DEL 】; 【 H 】 => 【 RETURN 】; 【 N 】=> 【 FORWARD_DEL 】</appendix>
             <appendix>【 A_PAD + SHIFT + H => Insert a new line below 】</appendix>
             <appendix>【 A_PAD + SHIFT + CONTROL + H => Insert a new line above 】</appendix>
+            
             <identifier vk_config="true">notsave.A_PAD_FOR_NUMPAD</identifier>
 
             <autogen>__BlockUntilKeyUp__ KeyCode::A</autogen>

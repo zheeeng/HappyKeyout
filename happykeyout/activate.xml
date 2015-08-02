@@ -103,14 +103,14 @@
     </item>
 
     <item>
-        <name>Activate D_DIVINED</name>
-        <identifier>private.HAPPY_KEYOUT.D_DIVINED</identifier>
+        <name>Activate D_DIVINE</name>
+        <identifier>private.HAPPY_KEYOUT.D_DIVINE</identifier>
         <autogen>
             __KeyOverlaidModifier__
             KeyCode::D,
 
             @begin
-            KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_D_DIVINED_FOR_MOUSE,
+            KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_D_DIVINE_FOR_MOUSE,
             @end
 
             @begin

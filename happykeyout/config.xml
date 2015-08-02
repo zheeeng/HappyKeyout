@@ -29,7 +29,6 @@
         </replacementvalue>
     </replacementdef>
 
-
     <vkopenurldef>
         <name>KeyCode::VK_OPEN_URL_SHELL_MOUSE_CURSOR_CENTER</name>
         <url type="shell">
@@ -38,7 +37,7 @@
             ]]>
         </url>
     </vkopenurldef>
-    
+
     <modifierdef>HAPPY_SCROLL</modifierdef>
     <modifierdef>HAPPY_JUMP</modifierdef>
 
