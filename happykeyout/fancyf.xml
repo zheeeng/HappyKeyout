@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <root>
 
-    <modifierdef>HAPPY_PAGE</modifierdef>
     <modifierdef>HAPPY_JUMP</modifierdef>
 
     <item>
@@ -9,57 +8,49 @@
 
         <item>
             <name>Cursor Movement</name>
-            <appendix>【 H => Move left 】</appendix>
-            <appendix>【 J => Move down 】</appendix>
-            <appendix>【 K => Move up 】</appendix>
+            <appendix>【 I => Move up 】</appendix>
             <appendix>【 L => Move right 】</appendix>
-            <appendix>【 H + D => Move to first character on line 】</appendix>
-            <appendix>【 J + D => Move forward to next word 】</appendix>
+            <appendix>【 K => Move down 】</appendix>
+            <appendix>【 J => Move left 】</appendix>
+            <appendix>【 I + D => Move to first character on line 】</appendix>
+            <appendix>【 L + D => Move forward to next word 】</appendix>
             <appendix>【 K + D => Move backward to next word 】</appendix>
-            <appendix>【 L + D => Move to end of line 】</appendix>
-            <appendix>【 H + S => Home 】</appendix>
-            <appendix>【 J + S => Page Down 】</appendix>
-            <appendix>【 K + S => Page UP 】</appendix>
-            <appendix>【 L + S => End 】</appendix>
+            <appendix>【 J + D => Move to end of line 】</appendix>
+            <appendix>【 U => Page UP 】</appendix>
+            <appendix>【 O => Page Down 】</appendix>
+            <appendix>【 M => Home 】</appendix>
+            <appendix>【 . => End 】</appendix>
             
             <identifier vk_config="true">notsave.F_FANCY_FOR_CURSOR</identifier>
 
             <autogen>__BlockUntilKeyUp__ KeyCode::F</autogen>
 
+            <!-- word or line jump -->
             <block>
                 <modifier_only>ModifierFlag::HAPPY_JUMP</modifier_only>
-
-                <block>
-                    <modifier_only>ModifierFlag::HAPPY_PAGE</modifier_only>
-                    <autogen>__KeyToKey__ KeyCode::H, KeyCode::CURSOR_LEFT, VK_COMMAND | VK_SHIFT</autogen>
-                    <autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_RIGHT, VK_OPTION | VK_SHIFT</autogen>
-                    <autogen>__KeyToKey__ KeyCode::K, KeyCode::CURSOR_LEFT, VK_OPTION | VK_SHIFT</autogen>
-                    <autogen>__KeyToKey__ KeyCode::L, KeyCode::CURSOR_RIGHT, VK_COMMAND | VK_SHIFT</autogen>
-                </block>
-
-                <autogen>__KeyToKey__ KeyCode::H, KeyCode::CURSOR_LEFT, VK_COMMAND</autogen>
-                <autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_RIGHT, VK_OPTION</autogen>
-                <autogen>__KeyToKey__ KeyCode::K, KeyCode::CURSOR_LEFT, VK_OPTION</autogen>
-                <autogen>__KeyToKey__ KeyCode::L, KeyCode::CURSOR_RIGHT, VK_COMMAND</autogen>
+                <autogen>__KeyToKey__ KeyCode::I, KeyCode::CURSOR_LEFT, VK_COMMAND</autogen>
+                <autogen>__KeyToKey__ KeyCode::L, KeyCode::CURSOR_RIGHT, VK_OPTION</autogen>
+                <autogen>__KeyToKey__ KeyCode::K, KeyCode::CURSOR_RIGHT, VK_COMMAND</autogen>
+                <autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_LEFT, VK_OPTION</autogen> 
             </block>
-
-            <block>
-                <modifier_only>ModifierFlag::HAPPY_PAGE</modifier_only>
-                <autogen>__KeyToKey__ KeyCode::H, KeyCode::HOME</autogen>
-                <autogen>__KeyToKey__ KeyCode::J, KeyCode::PAGEDOWN</autogen>
-                <autogen>__KeyToKey__ KeyCode::K, KeyCode::PAGEUP</autogen>
-                <autogen>__KeyToKey__ KeyCode::L, KeyCode::END</autogen>
-            </block>
-
 
             <!-- curser move -->
-            <autogen>__KeyToKey__ KeyCode::H, KeyCode::CURSOR_LEFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_DOWN</autogen>
-            <autogen>__KeyToKey__ KeyCode::K, KeyCode::CURSOR_UP</autogen>
-            <autogen>__KeyToKey__ KeyCode::L, KeyCode::CURSOR_RIGHT</autogen>
+            <block>
+                <autogen>__KeyToKey__ KeyCode::I, KeyCode::CURSOR_UP</autogen>
+                <autogen>__KeyToKey__ KeyCode::L, KeyCode::CURSOR_RIGHT</autogen>
+                <autogen>__KeyToKey__ KeyCode::K, KeyCode::CURSOR_DOWN</autogen>
+                <autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_LEFT</autogen>
+            </block>
+
+            <!-- page move -->
+            <block>
+                <autogen>__KeyToKey__ KeyCode::U, KeyCode::PAGEUP</autogen>
+                <autogen>__KeyToKey__ KeyCode::O, KeyCode::PAGEDOWN</autogen>
+                <autogen>__KeyToKey__ KeyCode::M, KeyCode::HOME</autogen>
+                <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::END</autogen>
+            </block>
 
             <!-- hyper -->
-            <autogen>__KeyToKey__ KeyCode::S, KeyCode::VK_MODIFIER_HAPPY_PAGE</autogen>
             <autogen>__KeyToKey__ KeyCode::D, KeyCode::VK_MODIFIER_HAPPY_JUMP</autogen>
 
         </item>
