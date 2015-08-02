@@ -182,23 +182,7 @@
     </item>
  -->
 
-    <!-- ZXCVBNM,./ -->
-    <item>
-        <name>Active V_VIMIUM</name>
-        <identifier>private.HAPPY_KEYOUT.V_VIMIUM</identifier>
-        <autogen>
-            __KeyOverlaidModifier__
-            KeyCode::V,
-
-            @begin
-            KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_V_VIMIUM_FOR_VIMKEYS,
-            @end
-
-            @begin
-            KeyCode::V
-            @end
-        </autogen>
-    </item>
+<!-- ZXCVBNM,./ -->
 
 <!-- X_EXTRA is on the way -->
 <!-- 
@@ -220,6 +204,23 @@
     </item>
  -->
 
+    <item>
+        <name>Ative Z_ZIPPO</name>
+        <identifier>private.HAPPY_KEYOUT.Z_ZIPPO</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::Z,
+
+            @begin
+            KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_Z_ZIPPO_FOR_CUSTOM_KEYS,
+            @end
+
+            @begin
+            KeyCode::Z
+            @end
+        </autogen>
+    </item>
+
 <!-- SUPER_SPACE is on the way -->
 <!--
      <item>
@@ -239,4 +240,5 @@
         </autogen>
     </item>
 -->
+
 </root>

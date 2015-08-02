@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <root>
-
     <replacementdef>
         <replacementname>HAPPY_RETURN</replacementname>
         <replacementvalue>
@@ -28,6 +27,16 @@
             ]]>
         </replacementvalue>
     </replacementdef>
+
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_SHELL_BUFFER_RANDOM_STRING</name>
+        <url type="shell"><![CDATA[    cat /dev/urandom | env LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1 | /usr/bin/pbcopy  ]]></url>
+    </vkopenurldef>
+
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_SHELL_BUFFER_TIME</name>
+        <url type="shell"><![CDATA[    /bin/date | /usr/bin/pbcopy    ]]></url>
+    </vkopenurldef>
 
     <vkopenurldef>
         <name>KeyCode::VK_OPEN_URL_SHELL_MOUSE_CURSOR_CENTER</name>
