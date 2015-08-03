@@ -2,10 +2,11 @@
 <root>
     <!-- ASDFGHJKL;' -->
     <item>
-        <name>Modifiers Remap</name>
-        <appendix>【A】【S_SHIFT】【D_DIVINE】【F】【G】【H】【J】【K_OPT】【L_SHIFT】【SEMICOLON_CTRL】【QUOTE】</appendix>
+        <name>Tranditional Modifiers Remapping</name>
+        <appendix>【A】【S_SHIFT】【D】【F】【G】【H】【J】【K_OPT】【L_SHIFT】【SEMICOLON_CTRL】【QUOTE】</appendix>
         <appendix>【Z】【X】【C】【V】【B】【N】【M_META】【COMMA】【DOT】【SLASH】</appendix>
         <identifier>private.HAPPY_KEYOUT.HANDY_MODIFIER</identifier>
+        <config_not>notsave.FASTTYPE_MODE</config_not>
 
         <autogen>__KeyOverlaidModifier__ KeyCode::S, KeyCode::SHIFT_L, KeyCode::S</autogen>
         <autogen>__KeyOverlaidModifier__ KeyCode::M, KeyCode::COMMAND_R, KeyCode::M</autogen>
@@ -27,6 +28,7 @@
      <item>
         <name>Ative G_GUIDE</name>
         <identifier>private.HAPPY_KEYOUT.G_GUIDE</identifier>
+        <config_not>notsave.FASTTYPE_MODE</config_not>
         <autogen>
             __KeyOverlaidModifier__
             KeyCode::G,
@@ -50,6 +52,7 @@
      <item>
         <name>Ative H_HYPER</name>
         <identifier>private.HAPPY_KEYOUT.H_HYPER</identifier>
+        <config_not>notsave.FASTTYPE_MODE</config_not>
         <autogen>
             __KeyOverlaidModifier__
             KeyCode::H,
@@ -69,8 +72,9 @@
 -->
 
     <item>
-        <name>Active F_FANCY</name>
+        <name>Activate F_FANCY</name>
         <identifier>private.HAPPY_KEYOUT.F_FANCY</identifier>
+        <config_not>notsave.FASTTYPE_MODE</config_not>
         <autogen>
             __KeyOverlaidModifier__
             KeyCode::F,
@@ -86,8 +90,9 @@
     </item>
 
     <item>
-        <name>Active J_JUNIOR</name>
+        <name>Activate J_JUNIOR</name>
         <identifier>private.HAPPY_KEYOUT.J_JUNIOR</identifier>
+        <config_not>notsave.FASTTYPE_MODE</config_not>
         <autogen>
             __KeyOverlaidModifier__
             KeyCode::J,
@@ -105,6 +110,7 @@
     <item>
         <name>Activate D_DIVINE</name>
         <identifier>private.HAPPY_KEYOUT.D_DIVINE</identifier>
+        <config_not>notsave.FASTTYPE_MODE</config_not>
         <autogen>
             __KeyOverlaidModifier__
             KeyCode::D,
@@ -123,8 +129,9 @@
     </item>
 
     <item>
-        <name>Active A_PAD</name>
+        <name>Activate A_PAD</name>
         <identifier>private.HAPPY_KEYOUT.A_PAD</identifier>
+        <config_not>notsave.FASTTYPE_MODE</config_not>
         <autogen>
             __KeyOverlaidModifier__
             KeyCode::A,
@@ -141,32 +148,12 @@
 
     <!-- QWERTYUIOP[] -->
 
-
-<!-- W_WANDER is on the way -->
-<!--
-     <item>
-        <name>Ative W_WANDER</name>
-        <identifier>private.HAPPY_KEYOUT.W_WANDER</identifier>
-        <autogen>
-            __KeyOverlaidModifier__
-            KeyCode::W,
-
-            @begin
-            KeyCode::VK_NONE,
-            @end
-
-            @begin
-            KeyCode::W
-            @end
-        </autogen>
-    </item>
--->
-
 <!-- Q_QUICK is on the way -->
 <!-- 
     <item>
         <name>Ative Q_QUICK</name>
         <identifier>private.HAPPY_KEYOUT.Q_QUICK</identifier>
+        <config_not>notsave.FASTTYPE_MODE</config_not>
         <autogen>
             __KeyOverlaidModifier__
             KeyCode::Q,
@@ -189,6 +176,7 @@
     <item>
         <name>Ative X_EXTRA</name>
         <identifier>private.HAPPY_KEYOUT.X_EXTRA</identifier>
+        <config_not>notsave.FASTTYPE_MODE</config_not>
         <autogen>
             __KeyOverlaidModifier__
             KeyCode::X,
@@ -205,8 +193,9 @@
  -->
 
     <item>
-        <name>Ative Z_ZIPPO</name>
+        <name>Activate Z_ZIPPO</name>
         <identifier>private.HAPPY_KEYOUT.Z_ZIPPO</identifier>
+        <config_not>notsave.FASTTYPE_MODE</config_not>
         <autogen>
             __KeyOverlaidModifier__
             KeyCode::Z,
@@ -226,6 +215,7 @@
      <item>
         <name>Ative SUPER_SPACE</name>
         <identifier>private.HAPPY_KEYOUT.SUPER_SPACE</identifier>
+        <config_not>notsave.FASTTYPE_MODE</config_not>
         <autogen>
             __KeyOverlaidModifier__
             KeyCode::SPACE,

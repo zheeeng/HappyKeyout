@@ -1,50 +1,47 @@
 <?xml version="1.0"?>
 <root>
     <item>
-        <name>A_PAD modifier: ** require ** A_PAD activated</name>
+        <name style="caution">A_PAD modifier: ** require ** A_PAD activated</name>
 
-        <item>
-            <name>Hold A_PAD to simulate active NUMPAD</name>
-            <appendix>【 M 】=> 【 0 】; 【 , 】 => 【 00 】; 【 . 】=> 【 . 】</appendix>
-            <appendix>【 J 】=> 【 1 】; 【 K 】 => 【 2 】; 【 L 】=> 【 3 】</appendix>
-            <appendix>【 U 】=> 【 4 】; 【 I 】 => 【 5 】; 【 O 】=> 【 6 】</appendix>
-            <appendix>【 KEY_7 】=> 【 7 】; 【 KEY_8 】 => 【 8 】; 【 KEY_9 】=> 【 9 】</appendix>
-            <appendix>【 p 】=> 【 + 】; 【 ; 】 => 【 - 】; 【 [ 】=> 【 * 】; 【 ' 】 => 【 % 】; 【 / 】 => 【 / 】</appendix>
-            <appendix>----------------------------------</appendix>
-            <appendix>【 Y 】=> 【 DEL 】; 【 H 】 => 【 RETURN 】; 【 N 】=> 【 FORWARD_DEL 】</appendix>
-            <appendix>【 A_PAD + SHIFT + H => Insert a new line below 】</appendix>
-            <appendix>【 A_PAD + SHIFT + CONTROL + H => Insert a new line above 】</appendix>
-            
-            <identifier vk_config="true">notsave.A_PAD_FOR_NUMPAD</identifier>
+        <appendix>Hold A_PAD to simulate activate NUMPAD</appendix>
+        <appendix>【 M 】=> 【 0 】; 【 , 】 => 【 00 】; 【 . 】=> 【 . 】</appendix>
+        <appendix>【 J 】=> 【 1 】; 【 K 】 => 【 2 】; 【 L 】=> 【 3 】</appendix>
+        <appendix>【 U 】=> 【 4 】; 【 I 】 => 【 5 】; 【 O 】=> 【 6 】</appendix>
+        <appendix>【 KEY_7 】=> 【 7 】; 【 KEY_8 】 => 【 8 】; 【 KEY_9 】=> 【 9 】</appendix>
+        <appendix>【 p 】=> 【 + 】; 【 ; 】 => 【 - 】; 【 [ 】=> 【 * 】; 【 ' 】 => 【 % 】; 【 / 】 => 【 / 】</appendix>
+        <appendix>----------------------------------</appendix>
+        <appendix>【 Y 】=> 【 DEL 】; 【 H 】 => 【 RETURN 】; 【 N 】=> 【 FORWARD_DEL 】</appendix>
+        <appendix>【 A_PAD + SHIFT + H => Insert a new line below 】</appendix>
+        <appendix>【 A_PAD + SHIFT + CONTROL + H => Insert a new line above 】</appendix>
+        
+        <identifier vk_config="true">notsave.A_PAD_FOR_NUMPAD</identifier>
 
-            <autogen>__BlockUntilKeyUp__ KeyCode::A</autogen>
+        <autogen>__BlockUntilKeyUp__ KeyCode::A</autogen>
 
-            <block>
-                <autogen>__KeyToKey__ KeyCode::M, KeyCode::KEYPAD_0</autogen>
-                <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::KEYPAD_0, KeyCode::KEYPAD_0</autogen>
-                <autogen>__KeyToKey__ KeyCode::J, KeyCode::KEYPAD_1</autogen>
-                <autogen>__KeyToKey__ KeyCode::K, KeyCode::KEYPAD_2</autogen>
-                <autogen>__KeyToKey__ KeyCode::L, KeyCode::KEYPAD_3</autogen>
-                <autogen>__KeyToKey__ KeyCode::U, KeyCode::KEYPAD_4</autogen>
-                <autogen>__KeyToKey__ KeyCode::I, KeyCode::KEYPAD_5</autogen>
-                <autogen>__KeyToKey__ KeyCode::O, KeyCode::KEYPAD_6</autogen>
-                <autogen>__KeyToKey__ KeyCode::KEY_7, KeyCode::KEYPAD_7</autogen>
-                <autogen>__KeyToKey__ KeyCode::KEY_8, KeyCode::KEYPAD_8</autogen>
-                <autogen>__KeyToKey__ KeyCode::KEY_9, KeyCode::KEYPAD_9</autogen>
-            </block>
+        <block>
+            <autogen>__KeyToKey__ KeyCode::M, KeyCode::KEYPAD_0</autogen>
+            <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::KEYPAD_0, KeyCode::KEYPAD_0</autogen>
+            <autogen>__KeyToKey__ KeyCode::J, KeyCode::KEYPAD_1</autogen>
+            <autogen>__KeyToKey__ KeyCode::K, KeyCode::KEYPAD_2</autogen>
+            <autogen>__KeyToKey__ KeyCode::L, KeyCode::KEYPAD_3</autogen>
+            <autogen>__KeyToKey__ KeyCode::U, KeyCode::KEYPAD_4</autogen>
+            <autogen>__KeyToKey__ KeyCode::I, KeyCode::KEYPAD_5</autogen>
+            <autogen>__KeyToKey__ KeyCode::O, KeyCode::KEYPAD_6</autogen>
+            <autogen>__KeyToKey__ KeyCode::KEY_7, KeyCode::KEYPAD_7</autogen>
+            <autogen>__KeyToKey__ KeyCode::KEY_8, KeyCode::KEYPAD_8</autogen>
+            <autogen>__KeyToKey__ KeyCode::KEY_9, KeyCode::KEYPAD_9</autogen>
+        </block>
 
-            <block>
-                <autogen>__KeyToKey__ KeyCode::P, KeyCode::KEYPAD_PLUS</autogen>
-                <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::KEYPAD_MINUS</autogen>
-                <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, KeyCode::KEYPAD_MULTIPLY</autogen>
-                <autogen>__KeyToKey__ KeyCode::QUOTE, KeyCode::KEY_5, VK_SHIFT</autogen>
-                <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::KEYPAD_DOT</autogen>
-                <autogen>__KeyToKey__ KeyCode::SLASH, KeyCode::KEYPAD_SLASH</autogen>
-            </block>
+        <block>
+            <autogen>__KeyToKey__ KeyCode::P, KeyCode::KEYPAD_PLUS</autogen>
+            <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::KEYPAD_MINUS</autogen>
+            <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, KeyCode::KEYPAD_MULTIPLY</autogen>
+            <autogen>__KeyToKey__ KeyCode::QUOTE, KeyCode::KEY_5, VK_SHIFT</autogen>
+            <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::KEYPAD_DOT</autogen>
+            <autogen>__KeyToKey__ KeyCode::SLASH, KeyCode::KEYPAD_SLASH</autogen>
+        </block>
 
-            {{ HAPPY_RETURN }}
-
-        </item>
+        {{ HAPPY_RETURN }}
 
     </item>
 </root>

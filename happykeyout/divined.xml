@@ -3,63 +3,60 @@
     <item>
         <name>D_DIVINE modifier: ** require ** D_DIVINE activated</name>
 
-        <item>
-            <name>Mouse Movement</name>
-            <appendix>【 I => Move up 】</appendix>
-            <appendix>【 L => Move right 】</appendix>
-            <appendix>【 K => Move down 】</appendix>
-            <appendix>【 J => Move left 】</appendix>
-            <appendix>【 JKLI + F => Move Speedup 】</appendix>
-            <appendix>【 I + Space => Scroll up 】</appendix>
-            <appendix>【 L + Space => Scroll right 】</appendix>
-            <appendix>【 K + Space => Scroll down 】</appendix>
-            <appendix>【 J + Space => Scroll left 】</appendix>
-            <appendix>----------------------------------</appendix>
-            <appendix>【 Y 】=> 【 DEL 】; 【 H 】 => 【 RETURN 】; 【 N 】=> 【 FORWARD_DEL 】</appendix>
-            <appendix>【 D_DIVINE + SHIFT + H => Insert a new line below 】</appendix>
-            <appendix>【 D_DIVINE + SHIFT + CONTROL + H => Insert a new line above 】</appendix>
+        <appendix>Mouse Movement</appendix>
+        <appendix>【 I => Move up 】</appendix>
+        <appendix>【 L => Move right 】</appendix>
+        <appendix>【 K => Move down 】</appendix>
+        <appendix>【 J => Move left 】</appendix>
+        <appendix>【 JKLI + F => Move Speedup 】</appendix>
+        <appendix>【 I + Space => Scroll up 】</appendix>
+        <appendix>【 L + Space => Scroll right 】</appendix>
+        <appendix>【 K + Space => Scroll down 】</appendix>
+        <appendix>【 J + Space => Scroll left 】</appendix>
+        <appendix>----------------------------------</appendix>
+        <appendix>【 Y 】=> 【 DEL 】; 【 H 】 => 【 RETURN 】; 【 N 】=> 【 FORWARD_DEL 】</appendix>
+        <appendix>【 D_DIVINE + SHIFT + H => Insert a new line below 】</appendix>
+        <appendix>【 D_DIVINE + SHIFT + CONTROL + H => Insert a new line above 】</appendix>
 
-            <identifier vk_config="true">notsave.D_DIVINE_FOR_MOUSE</identifier>
+        <identifier vk_config="true">notsave.D_DIVINE_FOR_MOUSE</identifier>
 
-            <autogen>__BlockUntilKeyUp__ KeyCode::D</autogen>
+        <autogen>__BlockUntilKeyUp__ KeyCode::D</autogen>
 
-            <!-- scroll -->
-            <block>
-                <modifier_only>ModifierFlag::HAPPY_SCROLL</modifier_only>
-                <autogen>__KeyToKey__ KeyCode::I, KeyCode::VK_MOUSEKEY_SCROLL_UP</autogen>
-                <autogen>__KeyToKey__ KeyCode::L, KeyCode::VK_MOUSEKEY_SCROLL_RIGHT</autogen>
-                <autogen>__KeyToKey__ KeyCode::K, KeyCode::VK_MOUSEKEY_SCROLL_DOWN</autogen>
-                <autogen>__KeyToKey__ KeyCode::J, KeyCode::VK_MOUSEKEY_SCROLL_LEFT</autogen>
-            </block>
+        <!-- scroll -->
+        <block>
+            <modifier_only>ModifierFlag::HAPPY_SCROLL</modifier_only>
+            <autogen>__KeyToKey__ KeyCode::I, KeyCode::VK_MOUSEKEY_SCROLL_UP</autogen>
+            <autogen>__KeyToKey__ KeyCode::L, KeyCode::VK_MOUSEKEY_SCROLL_RIGHT</autogen>
+            <autogen>__KeyToKey__ KeyCode::K, KeyCode::VK_MOUSEKEY_SCROLL_DOWN</autogen>
+            <autogen>__KeyToKey__ KeyCode::J, KeyCode::VK_MOUSEKEY_SCROLL_LEFT</autogen>
+        </block>
 
-            <!-- mouse move -->
-            <block>
-                <autogen>__KeyToKey__ KeyCode::I, KeyCode::VK_MOUSEKEY_UP</autogen>
-                <autogen>__KeyToKey__ KeyCode::L, KeyCode::VK_MOUSEKEY_RIGHT</autogen>
-                <autogen>__KeyToKey__ KeyCode::K, KeyCode::VK_MOUSEKEY_DOWN</autogen>
-                <autogen>__KeyToKey__ KeyCode::J, KeyCode::VK_MOUSEKEY_LEFT</autogen>
-            </block>
+        <!-- mouse move -->
+        <block>
+            <autogen>__KeyToKey__ KeyCode::I, KeyCode::VK_MOUSEKEY_UP</autogen>
+            <autogen>__KeyToKey__ KeyCode::L, KeyCode::VK_MOUSEKEY_RIGHT</autogen>
+            <autogen>__KeyToKey__ KeyCode::K, KeyCode::VK_MOUSEKEY_DOWN</autogen>
+            <autogen>__KeyToKey__ KeyCode::J, KeyCode::VK_MOUSEKEY_LEFT</autogen>
+        </block>
 
-            <!-- hyper -->
-            <block>
-                <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::VK_MODIFIER_HAPPY_SCROLL</autogen>
-                <autogen>__KeyToKey__ KeyCode::F, KeyCode::VK_MOUSEKEY_HIGHSPEED</autogen>
-            </block>
+        <!-- hyper -->
+        <block>
+            <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::VK_MODIFIER_HAPPY_SCROLL</autogen>
+            <autogen>__KeyToKey__ KeyCode::F, KeyCode::VK_MOUSEKEY_HIGHSPEED</autogen>
+        </block>
 
-            <!-- click -->
-            <block>
-                <autogen>__KeyToKey__ KeyCode::U, PointingButton::LEFT</autogen>
-                <autogen>__KeyToKey__ KeyCode::O, PointingButton::RIGHT</autogen>
-                <autogen>__KeyToKey__ KeyCode::M, KeyCode::VK_MOUSEKEY_LOCK_BUTTON_LEFT</autogen>
-                <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::VK_MOUSEKEY_LOCK_BUTTON_RIGHT</autogen>
-            </block>
+        <!-- click -->
+        <block>
+            <autogen>__KeyToKey__ KeyCode::U, PointingButton::LEFT</autogen>
+            <autogen>__KeyToKey__ KeyCode::O, PointingButton::RIGHT</autogen>
+            <autogen>__KeyToKey__ KeyCode::M, KeyCode::VK_MOUSEKEY_LOCK_BUTTON_LEFT</autogen>
+            <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::VK_MOUSEKEY_LOCK_BUTTON_RIGHT</autogen>
+        </block>
 
-            <!-- warp cursor position -->
-            <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::VK_OPEN_URL_SHELL_MOUSE_CURSOR_CENTER</autogen>
+        <!-- warp cursor position -->
+        <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::VK_OPEN_URL_SHELL_MOUSE_CURSOR_CENTER</autogen>
 
-            {{ HAPPY_RETURN }}
-
-        </item>
+        {{ HAPPY_RETURN }}
 
     </item>
 </root>

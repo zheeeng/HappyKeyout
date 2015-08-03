@@ -2,42 +2,40 @@
 <root>
     <item>
         <name>J_JUNIOR modifier: ** require ** J_JUNIOR activated</name>
-        <!-- To be continued -->
-        <item>
-            <name>Program Keys</name>
-            <appendix>【 1 => ! 】; 【 2 => @ 】; 【 3 => # 】;【 4 => $ 】; 【 5 => % 】</appendix>
-            <appendix>【 Q => ' 】; 【 W => _ 】; 【 E => = 】;【 R => \ 】; 【 T => | 】</appendix>
-            <appendix>【 A => &amp; 】; 【 S => &lt; 】; 【 D => &gt; 】;【 F => ( 】; 【 G => ) 】</appendix>
-            <appendix>【 Z => ^ 】; 【 X => { 】; 【 C => } 】;【 V => [ 】; 【 B => ] 】</appendix>
-            
-            <identifier vk_config="true">notsave.J_JUNIOR_FOR_PROGRAMKEYS</identifier>
 
-            <autogen>__BlockUntilKeyUp__ KeyCode::J</autogen>
+        <appendix>Program Keys</appendix>
+        <appendix>【 1 => ! 】; 【 2 => @ 】; 【 3 => # 】;【 4 => $ 】; 【 5 => % 】</appendix>
+        <appendix>【 Q => ' 】; 【 W => _ 】; 【 E => = 】;【 R => \ 】; 【 T => | 】</appendix>
+        <appendix>【 A => &amp; 】; 【 S => &lt; 】; 【 D => &gt; 】;【 F => ( 】; 【 G => ) 】</appendix>
+        <appendix>【 Z => ^ 】; 【 X => { 】; 【 C => } 】;【 V => [ 】; 【 B => ] 】</appendix>
+        
+        <identifier vk_config="true">notsave.J_JUNIOR_FOR_PROGRAMKEYS</identifier>
 
-            <autogen>__KeyToKey__ KeyCode::KEY_1, KeyCode::KEY_1, VK_SHIFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_2, KeyCode::KEY_2, VK_SHIFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_3, KeyCode::KEY_3, VK_SHIFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_4, KeyCode::KEY_4, VK_SHIFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_5, KeyCode::KEY_5, VK_SHIFT</autogen>
+        <autogen>__BlockUntilKeyUp__ KeyCode::J</autogen>
 
-            <autogen>__KeyToKey__ KeyCode::Q, KeyCode::QUOTE</autogen>
-            <autogen>__KeyToKey__ KeyCode::W, KeyCode::MINUS, VK_SHIFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::E, KeyCode::EQUAL</autogen>
-            <autogen>__KeyToKey__ KeyCode::R, KeyCode::BACKSLASH</autogen>
-            <autogen>__KeyToKey__ KeyCode::T, KeyCode::BACKSLASH, VK_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_1, KeyCode::KEY_1, VK_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_2, KeyCode::KEY_2, VK_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_3, KeyCode::KEY_3, VK_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_4, KeyCode::KEY_4, VK_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_5, KeyCode::KEY_5, VK_SHIFT</autogen>
 
-            <autogen>__KeyToKey__ KeyCode::A, KeyCode::KEY_7, VK_SHIFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::S, KeyCode::COMMA, VK_SHIFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::D, KeyCode::DOT, VK_SHIFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::F, KeyCode::KEY_9, VK_SHIFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::G, KeyCode::KEY_0, VK_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::Q, KeyCode::QUOTE</autogen>
+        <autogen>__KeyToKey__ KeyCode::W, KeyCode::MINUS, VK_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::E, KeyCode::EQUAL</autogen>
+        <autogen>__KeyToKey__ KeyCode::R, KeyCode::BACKSLASH</autogen>
+        <autogen>__KeyToKey__ KeyCode::T, KeyCode::BACKSLASH, VK_SHIFT</autogen>
 
-            <autogen>__KeyToKey__ KeyCode::Z, KeyCode::KEY_6, VK_SHIFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::X, KeyCode::BRACKET_LEFT, VK_SHIFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::C, KeyCode::BRACKET_RIGHT, VK_SHIFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::V, KeyCode::BRACKET_LEFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::B, KeyCode::BRACKET_RIGHT</autogen>
-            
-        </item>
+        <autogen>__KeyToKey__ KeyCode::A, KeyCode::KEY_7, VK_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::S, KeyCode::COMMA, VK_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::D, KeyCode::DOT, VK_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::F, KeyCode::KEY_9, VK_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::G, KeyCode::KEY_0, VK_SHIFT</autogen>
+
+        <autogen>__KeyToKey__ KeyCode::Z, KeyCode::KEY_6, VK_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::X, KeyCode::BRACKET_LEFT, VK_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::C, KeyCode::BRACKET_RIGHT, VK_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::V, KeyCode::BRACKET_LEFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::B, KeyCode::BRACKET_RIGHT</autogen>
+
     </item>
 </root>

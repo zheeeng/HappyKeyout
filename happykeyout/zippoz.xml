@@ -3,77 +3,76 @@
     <item>
         <name>Z_ZIPPO modifier: ** require ** Z_ZIPPO activated</name>
 
-        <item>
-            <name>Custom combination Shortcuts</name>
-            
-            <appendix>【 YY => yank current line 】</appendix>
-            <appendix>【 DD => delete current line 】</appendix>
-            <appendix>【 PP => paste to next line 】</appendix>
-            <appendix>【 CC => cut current line 】</appendix>
-            <appendix>【 JJ => move current line down 】</appendix>
-            <appendix>【 KK => move current line up 】</appendix>
-            <appendix>----------------------------------</appendix>
-            <identifier vk_config="true">notsave.Z_ZIPPO_FOR_CUSTOM_KEYS</identifier>
-            <autogen>__BlockUntilKeyUp__ KeyCode::Z</autogen>
+        <appendix>Custom Combination Shortcuts</appendix>
+        <appendix>【 YY => yank current line 】</appendix>
+        <appendix>【 DD => delete current line 】</appendix>
+        <appendix>【 PP => paste to next line 】</appendix>
+        <appendix>【 CC => cut current line 】</appendix>
+        <appendix>【 JJ => move current line down 】</appendix>
+        <appendix>【 KK => move current line up 】</appendix>
+        <appendix>----------------------------------</appendix>
+        <identifier vk_config="true">notsave.Z_ZIPPO_FOR_CUSTOM_KEYS</identifier>
+        <autogen>__BlockUntilKeyUp__ KeyCode::Z</autogen>
 
-            <block>
-                <autogen>
-                    __DoublePressModifier__
-                    KeyCode::Y,
-                    KeyCode::VK_NONE,
-                    KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::CURSOR_LEFT, VK_SHIFT | VK_COMMAND, KeyCode::C, VK_COMMAND
-                </autogen>
-                <autogen>
-                    __DoublePressModifier__
-                    KeyCode::D,
-                    KeyCode::VK_NONE,
-                    KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::CURSOR_LEFT, VK_SHIFT | VK_COMMAND, KeyCode::C, VK_COMMAND, KeyCode::DELETE, VK_COMMAND, KeyCode::DELETE,
-                    KeyCode::CURSOR_DOWN, KeyCode::CURSOR_RIGHT, VK_COMMAND
-                </autogen>
-                <autogen>
-                    __DoublePressModifier__
-                    KeyCode::P,
-                    KeyCode::VK_NONE,
-                    KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN, KeyCode::V, VK_COMMAND
-                </autogen>
-                <autogen>
-                    __DoublePressModifier__
-                    KeyCode::C,
-                    KeyCode::VK_NONE,
-                    KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::CURSOR_LEFT, VK_SHIFT | VK_COMMAND, KeyCode::X, VK_COMMAND
-                </autogen>
-                <autogen>
-                    __DoublePressModifier__
-                    KeyCode::K,
-                    KeyCode::VK_NONE,
-                    KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::CURSOR_LEFT, VK_SHIFT | VK_COMMAND, KeyCode::C, VK_COMMAND, KeyCode::DELETE, VK_COMMAND, KeyCode::DELETE,
-                    KeyCode::CURSOR_LEFT, VK_COMMAND, KeyCode::V, VK_COMMAND, KeyCode::RETURN, KeyCode::CURSOR_UP, KeyCode::CURSOR_RIGHT, VK_COMMAND
-                </autogen>
-                <autogen>
-                    __DoublePressModifier__
-                    KeyCode::J,
-                    KeyCode::VK_NONE,
-                    KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::CURSOR_LEFT, VK_SHIFT | VK_COMMAND, KeyCode::C, VK_COMMAND, KeyCode::DELETE, VK_COMMAND, KeyCode::FORWARD_DELETE,
-                    KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN, KeyCode::V, VK_COMMAND
-                </autogen>
+        <block>
+            <autogen>
+                __DoublePressModifier__
+                KeyCode::C, ModifierFlag::NONE,
+                KeyCode::VK_NONE,
+                KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::CURSOR_LEFT, VK_SHIFT | VK_COMMAND, KeyCode::C, VK_COMMAND
+            </autogen>
+            <autogen>
+                __DoublePressModifier__
+                KeyCode::D, ModifierFlag::NONE,
+                KeyCode::VK_NONE,
+                KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::CURSOR_LEFT, VK_SHIFT | VK_COMMAND, KeyCode::C, VK_COMMAND, KeyCode::DELETE, VK_COMMAND, KeyCode::DELETE,
+                KeyCode::CURSOR_DOWN, KeyCode::CURSOR_RIGHT, VK_COMMAND
+            </autogen>
+            <autogen>
+                __DoublePressModifier__
+                KeyCode::V, ModifierFlag::NONE,
+                KeyCode::VK_NONE,
+                KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN, KeyCode::V, VK_COMMAND
+            </autogen>
+            <autogen>
+                __DoublePressModifier__
+                KeyCode::X, ModifierFlag::NONE,
+                KeyCode::VK_NONE,
+                KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::CURSOR_LEFT, VK_SHIFT | VK_COMMAND, KeyCode::X, VK_COMMAND
+            </autogen>
+            <autogen>
+                __DoublePressModifier__
+                KeyCode::K, ModifierFlag::NONE,
+                KeyCode::VK_NONE,
+                KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::CURSOR_LEFT, VK_SHIFT | VK_COMMAND, KeyCode::C, VK_COMMAND, KeyCode::DELETE, VK_COMMAND, KeyCode::DELETE,
+                KeyCode::CURSOR_LEFT, VK_COMMAND, KeyCode::V, VK_COMMAND, KeyCode::RETURN, KeyCode::CURSOR_UP, KeyCode::CURSOR_RIGHT, VK_COMMAND
+            </autogen>
+            <autogen>
+                __DoublePressModifier__
+                KeyCode::J, ModifierFlag::NONE,
+                KeyCode::VK_NONE,
+                KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::CURSOR_LEFT, VK_SHIFT | VK_COMMAND, KeyCode::C, VK_COMMAND, KeyCode::DELETE, VK_COMMAND, KeyCode::FORWARD_DELETE,
+                KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN, KeyCode::V, VK_COMMAND
+            </autogen>
+        </block>
 
-                <autogen>
-                    __DoublePressModifier__
-                    KeyCode::T,
-                    KeyCode::VK_NONE,
-                    KeyCode::VK_OPEN_URL_SHELL_BUFFER_TIME,
-                    KeyCode::V, VK_COMMAND
-                </autogen>
+        <block>
+            <autogen>
+                __DoublePressModifier__
+                KeyCode::T, ModifierFlag::NONE,
+                KeyCode::VK_NONE,
+                KeyCode::VK_OPEN_URL_SHELL_BUFFER_TIME,
+                KeyCode::V, VK_COMMAND
+            </autogen>
+            <autogen>
+                __DoublePressModifier__
+                KeyCode::R, ModifierFlag::NONE,
+                KeyCode::VK_NONE,
+                KeyCode::VK_OPEN_URL_SHELL_BUFFER_RANDOM_STRING,
+                KeyCode::V, VK_COMMAND
+            </autogen>
 
-                <autogen>
-                    __DoublePressModifier__
-                    KeyCode::R,
-                    KeyCode::VK_NONE,
-                    KeyCode::VK_OPEN_URL_SHELL_BUFFER_RANDOM_STRING,
-                    KeyCode::V, VK_COMMAND
-                </autogen>
+        </block>
 
-            </block>
-        </item>
     </item>
 </root>
