@@ -4,13 +4,16 @@
         <name>Z_ZIPPO modifier: ** require ** Z_ZIPPO activated</name>
 
         <appendix>Custom Combination Shortcuts</appendix>
-        <appendix>【 YY => yank current line 】</appendix>
-        <appendix>【 DD => delete current line 】</appendix>
-        <appendix>【 PP => paste to next line 】</appendix>
-        <appendix>【 CC => cut current line 】</appendix>
-        <appendix>【 JJ => move current line down 】</appendix>
-        <appendix>【 KK => move current line up 】</appendix>
+        <appendix>【 YY => Yank current line 】</appendix>
+        <appendix>【 DD => Delete current line 】</appendix>
+        <appendix>【 PP => Paste to next line 】</appendix>
+        <appendix>【 CC => Cut current line 】</appendix>
+        <appendix>【 JJ => Move current line down 】</appendix>
+        <appendix>【 KK => Move current line up 】</appendix>
         <appendix>----------------------------------</appendix>
+        <appendix>【 TT => Output current time 】</appendix>
+        <appendix>【 RR => Output a random string 】</appendix>
+
         <identifier vk_config="true">notsave.Z_ZIPPO_FOR_CUSTOM_KEYS</identifier>
         <autogen>__BlockUntilKeyUp__ KeyCode::Z</autogen>
 

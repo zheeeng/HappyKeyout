@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <root>
     <item>
-        <name style="caution">A_PAD modifier: ** require ** A_PAD activated</name>
+        <name>A_PAD modifier: ** require ** A_PAD activated</name>
 
         <appendix>Hold A_PAD to simulate activate NUMPAD</appendix>
         <appendix>【 M 】=> 【 0 】; 【 , 】 => 【 00 】; 【 . 】=> 【 . 】</appendix>

@@ -28,6 +28,19 @@
         </replacementvalue>
     </replacementdef>
 
+    <replacementdef>
+        <replacementname>SLASH_TOGGLE_FORCE_OFF_ALL</replacementname>
+        <replacementvalue>
+            <![CDATA[
+                KeyCode::VK_CONFIG_FORCE_OFF_notsave_F_FANCY_FOR_CURSOR,
+                KeyCode::VK_CONFIG_FORCE_OFF_notsave_J_JUNIOR_FOR_PROGRAMKEYS,
+                KeyCode::VK_CONFIG_FORCE_OFF_notsave_D_DIVINE_FOR_MOUSE,
+                KeyCode::VK_CONFIG_FORCE_OFF_notsave_A_PAD_FOR_NUMPAD,
+                KeyCode::VK_CONFIG_FORCE_OFF_notsave_Z_ZIPPO_FOR_CUSTOM_KEYS,
+            ]]>
+        </replacementvalue>
+    </replacementdef>
+
     <vkopenurldef>
         <name>KeyCode::VK_OPEN_URL_SHELL_BUFFER_RANDOM_STRING</name>
         <url type="shell"><![CDATA[    cat /dev/urandom | env LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1 | /usr/bin/pbcopy  ]]></url>
