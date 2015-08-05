@@ -102,6 +102,22 @@
                 </block>
 
                 <block>
+                    <config_only>private.HAPPY_KEYOUT.P_POWER</config_only>
+                    <block>
+                        <config_not>notsave.P_POWER_FOR_PSD</config_not>
+                        <autogen>
+                            __KeyToKey__ KeyCode::P,
+                            {{ SLASH_TOGGLE_FORCE_OFF_ALL }}
+                            KeyCode::VK_CONFIG_FORCE_ON_notsave_P_POWER_FOR_PSD
+                        </autogen>
+                    </block>
+                    <autogen>
+                        __KeyToKey__ KeyCode::P,
+                        {{ SLASH_TOGGLE_FORCE_OFF_ALL }}
+                    </autogen>
+                </block>
+
+                <block>
                     <config_only>private.HAPPY_KEYOUT.Z_ZIPPO</config_only>
                     <block>
                         <config_not>notsave.Z_ZIPPO_FOR_CUSTOM_KEYS</config_not>
@@ -289,6 +305,11 @@
             </autogen>
         </item>
      -->
+
+        <item>
+            <name>Ative P_POWER</name>
+            <identifier>private.HAPPY_KEYOUT.P_POWER</identifier>
+        </item>
 
     <!-- 
         <item>

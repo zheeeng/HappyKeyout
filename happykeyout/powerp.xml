@@ -1,4 +1,17 @@
 <?xml version="1.0"?>
 <root>
+    <item>
+        <name>P_POWER modifier: ** require ** P_POWER activated</name>
+        <appendix>Password convert</appendix>
+        <appendix>【 A &lt;=&gt; 4 】</appendix>
+        <appendix>【 S &lt;=&gt; 5 】</appendix>
     
+        <identifier vk_config="true">notsave.P_POWER_FOR_PSD</identifier>
+
+        <autogen>__KeyToKey__ KeyCode::A, KeyCode::KEY_4</autogen>
+        <autogen>__KeyToKey__ KeyCode::S, KeyCode::KEY_5</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_4, KeyCode::A</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_5, KeyCode::S</autogen>
+
+    </item>
 </root>
