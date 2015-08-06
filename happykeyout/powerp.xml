@@ -4,14 +4,39 @@
         <name>P_POWER modifier: ** require ** P_POWER activated</name>
         <appendix>Password convert</appendix>
         <appendix>【 A &lt;=&gt; 4 】</appendix>
+        <appendix>【 B &lt;=&gt; 8 】</appendix>
+        <appendix>【 E &lt;=&gt; 3 】</appendix>
+        <appendix>【 G &lt;=&gt; 6 】</appendix>
+        <appendix>【 I &lt;=&gt; 1 】</appendix>
+        <appendix>【 O &lt;=&gt; 0 】</appendix>
+        <appendix>【 Q &lt;=&gt; 9 】</appendix>
         <appendix>【 S &lt;=&gt; 5 】</appendix>
+        <appendix>【 T &lt;=&gt; 7 】</appendix>
+        <appendix>【 Z &lt;=&gt; 2 】</appendix>
     
         <identifier vk_config="true">notsave.P_POWER_FOR_PSD</identifier>
 
         <autogen>__KeyToKey__ KeyCode::A, KeyCode::KEY_4</autogen>
+        <autogen>__KeyToKey__ KeyCode::B, KeyCode::KEY_8</autogen>
+        <autogen>__KeyToKey__ KeyCode::E, KeyCode::KEY_3</autogen>
+        <autogen>__KeyToKey__ KeyCode::G, KeyCode::KEY_6</autogen>
+        <autogen>__KeyToKey__ KeyCode::I, KeyCode::KEY_1</autogen>
+        <autogen>__KeyToKey__ KeyCode::O, KeyCode::KEY_0</autogen>
+        <autogen>__KeyToKey__ KeyCode::Q, KeyCode::KEY_9</autogen>
         <autogen>__KeyToKey__ KeyCode::S, KeyCode::KEY_5</autogen>
+        <autogen>__KeyToKey__ KeyCode::T, KeyCode::KEY_7</autogen>
+        <autogen>__KeyToKey__ KeyCode::Z, KeyCode::KEY_2</autogen>
+
+        <autogen>__KeyToKey__ KeyCode::KEY_0, KeyCode::O</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_1, KeyCode::I</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_2, KeyCode::Z</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_3, KeyCode::E</autogen>
         <autogen>__KeyToKey__ KeyCode::KEY_4, KeyCode::A</autogen>
         <autogen>__KeyToKey__ KeyCode::KEY_5, KeyCode::S</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_6, KeyCode::G</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_7, KeyCode::T</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_8, KeyCode::B</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_9, KeyCode::Q</autogen>
 
     </item>
 </root>
