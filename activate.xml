@@ -167,7 +167,7 @@
 
     <!--
         <item>
-            <name>Ative G_GUIDE</name>
+            <name>Activate G_GUIDE</name>
             <identifier>private.HAPPY_KEYOUT.G_GUIDE</identifier>
             <config_not>notsave.FASTTYPE_MODE</config_not>
             <autogen>
@@ -190,7 +190,7 @@
 
     <!--
         <item>
-            <name>Ative H_HYPER</name>
+            <name>Activate H_HYPER</name>
             <identifier>private.HAPPY_KEYOUT.H_HYPER</identifier>
             <config_not>notsave.FASTTYPE_MODE</config_not>
             <autogen>
@@ -288,7 +288,7 @@
 
     <!-- 
         <item>
-            <name>Ative Q_QUICK</name>
+            <name>Activate Q_QUICK</name>
             <identifier>private.HAPPY_KEYOUT.Q_QUICK</identifier>
             <config_not>notsave.FASTTYPE_MODE</config_not>
             <autogen>
@@ -307,13 +307,13 @@
      -->
 
         <item>
-            <name>Ative P_POWER</name>
+            <name>Activate P_POWER</name>
             <identifier>private.HAPPY_KEYOUT.P_POWER</identifier>
         </item>
 
     <!-- 
         <item>
-            <name>Ative X_EXTRA</name>
+            <name>Activate X_EXTRA</name>
             <identifier>private.HAPPY_KEYOUT.X_EXTRA</identifier>
             <config_not>notsave.FASTTYPE_MODE</config_not>
             <autogen>
@@ -351,7 +351,7 @@
 
     <!--
          <item>
-            <name>Ative SUPER_SPACE</name>
+            <name>Activate SUPER_SPACE</name>
             <identifier>private.HAPPY_KEYOUT.SUPER_SPACE</identifier>
             <config_not>notsave.FASTTYPE_MODE</config_not>
             <autogen>
