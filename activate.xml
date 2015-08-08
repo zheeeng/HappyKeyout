@@ -31,11 +31,22 @@
 
                 <autogen>__BlockUntilKeyUp__ KeyCode::SLASH</autogen>
 
-                <autogen>
-                   __SimultaneousKeyPresses__
-                    KeyCode::F, KeyCode::J, ModifierFlag::NONE,
-                    KeyCode::VK_CONFIG_TOGGLE_notsave_FASTTYPE_MODE
-                </autogen>
+                <block>
+                    <block>
+                        <config_not>notsave.FASTTYPE_MODE</config_not>
+                        <autogen>
+                           __SimultaneousKeyPresses__
+                            KeyCode::F, KeyCode::J, ModifierFlag::NONE,
+                            {{ SLASH_TOGGLE_FORCE_OFF_ALL }}
+                            KeyCode::VK_CONFIG_FORCE_ON_notsave_FASTTYPE_MODE
+                        </autogen>
+                    </block>
+                    <autogen>
+                       __SimultaneousKeyPresses__
+                        KeyCode::F, KeyCode::J, ModifierFlag::NONE,
+                        {{ SLASH_TOGGLE_FORCE_OFF_ALL }}
+                    </autogen>
+                </block>
 
                 <block>
                     <config_only>private.HAPPY_KEYOUT.F_FANCY</config_only>
