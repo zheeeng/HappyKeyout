@@ -32,6 +32,13 @@
         <replacementname>SLASH_TOGGLE_FORCE_OFF_ALL</replacementname>
         <replacementvalue>
             <![CDATA[
+
+                KeyCode::VK_CONFIG_FORCE_OFF_notsave_MODE_MESSAGE_F,
+                KeyCode::VK_CONFIG_FORCE_OFF_notsave_MODE_MESSAGE_J,
+                KeyCode::VK_CONFIG_FORCE_OFF_notsave_MODE_MESSAGE_D,
+                KeyCode::VK_CONFIG_FORCE_OFF_notsave_MODE_MESSAGE_A,
+                KeyCode::VK_CONFIG_FORCE_OFF_notsave_MODE_MESSAGE_P,
+                KeyCode::VK_CONFIG_FORCE_OFF_notsave_MODE_MESSAGE_Z,
                 KeyCode::VK_CONFIG_FORCE_OFF_notsave_FASTTYPE_MODE,
                 KeyCode::VK_CONFIG_FORCE_OFF_notsave_F_FANCY_FOR_CURSOR,
                 KeyCode::VK_CONFIG_FORCE_OFF_notsave_J_JUNIOR_FOR_PROGRAMKEYS,
