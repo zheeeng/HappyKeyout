@@ -9,7 +9,7 @@
         <appendix>【 A => &amp; 】; 【 S => &lt; 】; 【 D => &gt; 】;【 F => ( 】; 【 G => ) 】</appendix>
         <appendix>【 Z => ^ 】; 【 X => { 】; 【 C => } 】;【 V => [ 】; 【 B => ] 】</appendix>
         
-        <identifier vk_config="true">notsave.J_JUNIOR_FOR_PROGRAMKEYS</identifier>
+        <identifier vk_config="true">notsave.J_JUNIOR</identifier>
 
         <autogen>__BlockUntilKeyUp__ KeyCode::J</autogen>
 

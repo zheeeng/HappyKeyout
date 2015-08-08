@@ -18,7 +18,7 @@
         <appendix>【 D_DIVINE + SHIFT + H => Insert a new line below 】</appendix>
         <appendix>【 D_DIVINE + SHIFT + CONTROL + H => Insert a new line above 】</appendix>
 
-        <identifier vk_config="true">notsave.D_DIVINE_FOR_MOUSE</identifier>
+        <identifier vk_config="true">notsave.D_DIVINE</identifier>
 
         <autogen>__BlockUntilKeyUp__ KeyCode::D</autogen>
 

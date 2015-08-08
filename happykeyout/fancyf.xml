@@ -21,7 +21,7 @@
         <appendix>【 F_FANCY + SHIFT + H => Insert a new line below 】</appendix>
         <appendix>【 F_FANCY + SHIFT + CONTROL + H => Insert a new line above 】</appendix>
         
-        <identifier vk_config="true">notsave.F_FANCY_FOR_CURSOR</identifier>
+        <identifier vk_config="true">notsave.F_FANCY</identifier>
 
         <autogen>__BlockUntilKeyUp__ KeyCode::F</autogen>
 

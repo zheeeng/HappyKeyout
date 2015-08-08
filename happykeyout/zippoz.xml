@@ -14,7 +14,7 @@
         <appendix>【 TT => Output current time 】</appendix>
         <appendix>【 RR => Output a random string 】</appendix>
 
-        <identifier vk_config="true">notsave.Z_ZIPPO_FOR_CUSTOM_KEYS</identifier>
+        <identifier vk_config="true">notsave.Z_ZIPPO</identifier>
         <autogen>__BlockUntilKeyUp__ KeyCode::Z</autogen>
 
         <block>

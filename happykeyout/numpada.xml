@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <root>
     <item>
-        <name>A_PAD modifier: ** require ** A_PAD activated</name>
+        <name>A_NUMPAD modifier: ** require ** A_NUMPAD activated</name>
 
         <appendix>Hold A_PAD to simulate activate NUMPAD</appendix>
         <appendix>【 M 】=> 【 0 】; 【 , 】 => 【 00 】; 【 . 】=> 【 . 】</appendix>
@@ -14,7 +14,7 @@
         <appendix>【 A_PAD + SHIFT + H => Insert a new line below 】</appendix>
         <appendix>【 A_PAD + SHIFT + CONTROL + H => Insert a new line above 】</appendix>
         
-        <identifier vk_config="true">notsave.A_PAD_FOR_NUMPAD</identifier>
+        <identifier vk_config="true">notsave.A_NUMPAD</identifier>
 
         <autogen>__BlockUntilKeyUp__ KeyCode::A</autogen>
 

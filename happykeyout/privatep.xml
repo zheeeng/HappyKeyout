@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <root>
     <item>
-        <name>P_POWER modifier: ** require ** P_POWER activated</name>
-        <appendix>Password convert</appendix>
+        <name>P_PRIVATE modifier: ** require ** P_PRIVATE activated</name>
+        <appendix>Leet convert</appendix>
         <appendix>【 A &lt;=&gt; 4 】</appendix>
         <appendix>【 B &lt;=&gt; 8 】</appendix>
         <appendix>【 E &lt;=&gt; 3 】</appendix>
@@ -14,7 +14,7 @@
         <appendix>【 T &lt;=&gt; 7 】</appendix>
         <appendix>【 Z &lt;=&gt; 2 】</appendix>
     
-        <identifier vk_config="true">notsave.P_POWER_FOR_PSD</identifier>
+        <identifier vk_config="true">notsave.P_PRIVATE</identifier>
 
         <autogen>__KeyToKey__ KeyCode::A, KeyCode::KEY_4</autogen>
         <autogen>__KeyToKey__ KeyCode::B, KeyCode::KEY_8</autogen>

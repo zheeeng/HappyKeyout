@@ -16,7 +16,7 @@
                     KeyCode::SLASH,
 
                     @begin
-                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_SLASH_TOGGLE_FOR_TOGGLE,
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_SLASH_TOGGLE,
                     @end
 
                     @begin
@@ -27,7 +27,7 @@
 
             <item hidden="true">
                 <name></name>
-                <identifier vk_config="true">notsave.SLASH_TOGGLE_FOR_TOGGLE</identifier>
+                <identifier vk_config="true">notsave.SLASH_TOGGLE</identifier>
 
                 <autogen>__BlockUntilKeyUp__ KeyCode::SLASH</autogen>
 
@@ -51,12 +51,12 @@
                 <block>
                     <config_only>private.HAPPY_KEYOUT.F_FANCY</config_only>
                     <block>
-                        <config_not>notsave.F_FANCY_FOR_CURSOR</config_not>
+                        <config_not>notsave.F_FANCY</config_not>
                         <autogen>
                             __KeyToKey__ KeyCode::F,
                             {{ SLASH_TOGGLE_FORCE_OFF_ALL }}
                             KeyCode::VK_CONFIG_FORCE_ON_notsave_MODE_MESSAGE_F,
-                            KeyCode::VK_CONFIG_FORCE_ON_notsave_F_FANCY_FOR_CURSOR
+                            KeyCode::VK_CONFIG_FORCE_ON_notsave_F_FANCY
                         </autogen>
                     </block>
                     <autogen>
@@ -68,12 +68,12 @@
                 <block>
                     <config_only>private.HAPPY_KEYOUT.J_JUNIOR</config_only>
                     <block>
-                        <config_not>notsave.J_JUNIOR_FOR_PROGRAMKEYS</config_not>
+                        <config_not>notsave.J_JUNIOR</config_not>
                         <autogen>
                             __KeyToKey__ KeyCode::J,
                             {{ SLASH_TOGGLE_FORCE_OFF_ALL }}
                             KeyCode::VK_CONFIG_FORCE_ON_notsave_MODE_MESSAGE_J,
-                            KeyCode::VK_CONFIG_FORCE_ON_notsave_J_JUNIOR_FOR_PROGRAMKEYS
+                            KeyCode::VK_CONFIG_FORCE_ON_notsave_J_JUNIOR
                         </autogen>
                     </block>
                     <autogen>
@@ -85,12 +85,12 @@
                 <block>
                     <config_only>private.HAPPY_KEYOUT.D_DIVINE</config_only>
                     <block>
-                        <config_not>notsave.D_DIVINE_FOR_MOUSE</config_not>
+                        <config_not>notsave.D_DIVINE</config_not>
                         <autogen>
                             __KeyToKey__ KeyCode::D,
                             {{ SLASH_TOGGLE_FORCE_OFF_ALL }}
                             KeyCode::VK_CONFIG_FORCE_ON_notsave_MODE_MESSAGE_D,
-                            KeyCode::VK_CONFIG_FORCE_ON_notsave_D_DIVINE_FOR_MOUSE
+                            KeyCode::VK_CONFIG_FORCE_ON_notsave_D_DIVINE
                         </autogen>
                     </block>
                     <autogen>
@@ -102,12 +102,12 @@
                 <block>
                     <config_only>private.HAPPY_KEYOUT.A_PAD</config_only>
                     <block>
-                        <config_not>notsave.A_PAD_FOR_NUMPAD</config_not>
+                        <config_not>notsave.A_NUMPAD</config_not>
                         <autogen>
                             __KeyToKey__ KeyCode::A,
                             {{ SLASH_TOGGLE_FORCE_OFF_ALL }}
                             KeyCode::VK_CONFIG_FORCE_ON_notsave_MODE_MESSAGE_A,
-                            KeyCode::VK_CONFIG_FORCE_ON_notsave_A_PAD_FOR_NUMPAD
+                            KeyCode::VK_CONFIG_FORCE_ON_notsave_A_NUMPAD
                         </autogen>
                     </block>
                     <autogen>
@@ -117,14 +117,14 @@
                 </block>
 
                 <block>
-                    <config_only>private.HAPPY_KEYOUT.P_POWER</config_only>
+                    <config_only>private.HAPPY_KEYOUT.P_PRIVATE</config_only>
                     <block>
-                        <config_not>notsave.P_POWER_FOR_PSD</config_not>
+                        <config_not>notsave.P_PRIVATE</config_not>
                         <autogen>
                             __KeyToKey__ KeyCode::P,
                             {{ SLASH_TOGGLE_FORCE_OFF_ALL }}
                             KeyCode::VK_CONFIG_FORCE_ON_notsave_MODE_MESSAGE_P,
-                            KeyCode::VK_CONFIG_FORCE_ON_notsave_P_POWER_FOR_PSD
+                            KeyCode::VK_CONFIG_FORCE_ON_notsave_P_PRIVATE
                         </autogen>
                     </block>
                     <autogen>
@@ -136,12 +136,12 @@
                 <block>
                     <config_only>private.HAPPY_KEYOUT.Z_ZIPPO</config_only>
                     <block>
-                        <config_not>notsave.Z_ZIPPO_FOR_CUSTOM_KEYS</config_not>
+                        <config_not>notsave.Z_ZIPPO</config_not>
                         <autogen>
                             __KeyToKey__ KeyCode::Z,
                             {{ SLASH_TOGGLE_FORCE_OFF_ALL }}
                             KeyCode::VK_CONFIG_FORCE_ON_notsave_MODE_MESSAGE_Z,
-                            KeyCode::VK_CONFIG_FORCE_ON_notsave_Z_ZIPPO_FOR_CUSTOM_KEYS
+                            KeyCode::VK_CONFIG_FORCE_ON_notsave_Z_ZIPPO
                         </autogen>
                     </block>
                     <autogen>
@@ -275,7 +275,7 @@
                 KeyCode::F,
 
                 @begin
-                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_F_FANCY_FOR_CURSOR,
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_F_FANCY,
                 @end
 
                 @begin
@@ -293,7 +293,7 @@
                 KeyCode::J,
 
                 @begin
-                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_J_JUNIOR_FOR_PROGRAMKEYS,
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_J_JUNIOR,
                 @end
 
                 @begin
@@ -311,7 +311,7 @@
                 KeyCode::D,
 
                 @begin
-                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_D_DIVINE_FOR_MOUSE,
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_D_DIVINE,
                 @end
 
                 @begin
@@ -332,7 +332,7 @@
                 KeyCode::A,
 
                 @begin
-                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_A_PAD_FOR_NUMPAD,
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_A_NUMPAD,
                 @end
 
                 @begin
@@ -362,8 +362,8 @@
      -->
 
         <item>
-            <name>Activate P_POWER</name>
-            <identifier>private.HAPPY_KEYOUT.P_POWER</identifier>
+            <name>Activate P_PRIVATE</name>
+            <identifier>private.HAPPY_KEYOUT.P_PRIVATE</identifier>
         </item>
 
     <!-- 
@@ -395,7 +395,7 @@
                 KeyCode::Z,
 
                 @begin
-                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_Z_ZIPPO_FOR_CUSTOM_KEYS,
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_Z_ZIPPO,
                 @end
 
                 @begin
