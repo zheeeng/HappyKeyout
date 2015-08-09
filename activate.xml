@@ -151,44 +151,44 @@
                 </block>
             </item>
 
-            <block hidden="true">
-                <item>
+            <block>
+                <item hidden="true">
                     <name></name>
                     <identifier vk_config="true">notsave.FASTTYPE_MODE</identifier>/
                     <autogen>__ShowStatusMessage__ FASTTYPE MODE</autogen>
                 </item>
 
-                <item>
+                <item hidden="true">
                     <name></name>
                     <identifier vk_config="true">notsave.MODE_MESSAGE_F</identifier>
                     <autogen>__ShowStatusMessage__ FASTTYPE MODE</autogen>
                 </item>
 
-                <item>
+                <item hidden="true">
                     <name></name>
                     <identifier vk_config="true">notsave.MODE_MESSAGE_J</identifier>
                     <autogen>__ShowStatusMessage__ JUNIOR MODE</autogen>
                 </item>
 
-                <item>
+                <item hidden="true">
                     <name></name>
                     <identifier vk_config="true">notsave.MODE_MESSAGE_D</identifier>
                     <autogen>__ShowStatusMessage__ DIVINE MODE</autogen>
                 </item>
 
-                <item>
+                <item hidden="true">
                     <name></name>
                     <identifier vk_config="true">notsave.MODE_MESSAGE_A</identifier>
                     <autogen>__ShowStatusMessage__ NUMPAD MODE</autogen>
                 </item>
 
-                <item>
+                <item hidden="true">
                     <name></name>
                     <identifier vk_config="true">notsave.MODE_MESSAGE_P</identifier>
                     <autogen>__ShowStatusMessage__ POWER MODE</autogen>
                 </item>
 
-                <item>
+                <item hidden="true">
                     <name></name>
                     <identifier vk_config="true">notsave.MODE_MESSAGE_Z</identifier>
                     <autogen>__ShowStatusMessage__ ZIPPO MODE</autogen>
