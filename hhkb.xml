@@ -11,15 +11,46 @@
         <productid>0x0100</productid>
     </deviceproductdef>
 
+    <!-- Apps -->
+    <replacementdef>
+        <replacementname>Jet_Brains</replacementname>
+        <replacementvalue>PhpStorm, RubyMine, IntelliJ, WebStrom, Clion</replacementvalue>
+    </replacementdef>
+    
     <appdef>
         <appname>Emacs</appname>
         <equal>org.gnu.Emacs</equal>
     </appdef>
 
+    <appdef>
+        <appname>PhpStorm</appname>
+        <prefix>com.jetbrains.PhpStorm</prefix>
+    </appdef>
+
+    <appdef>
+        <appname>RubyMine</appname>
+        <prefix>com.jetbrains.rubymine</prefix>
+    </appdef>
+
+    <appdef>
+        <appname>IntelliJ</appname>
+        <prefix>com.jetbrains.intellij</prefix>
+    </appdef>
+
+    <appdef>
+        <appname>WebStrom</appname>
+        <equal>com.jetbrains.WebStrom</equal>
+    </appdef>
+
+    <appdef>
+      <appname>Clion</appname>
+      <equal>com.jetbrains.Clion</equal>
+    </appdef>
+
     <!-- configurations -->
 
     <item>
-        <name>⌘: HHKB Custom</name>
+        <name>⌘: HHKB Customjjjjj</name>
         <item>
             <name>【 hit CONTROL_L =>  ESCAPE, holding CONTROL_L => hyper 】</name>
             <identifier>private.HHKB.control_hit2_esc</identifier>
@@ -53,6 +84,7 @@
         <item>
             <name>【 SHIFT x2 => CAPSLOCK 】</name>
             <identifier>private.hhkb.double_control_to_capslock</identifier>
+            <not>{{ Jet_Brains }}</not>
             <autogen>__DoublePressModifier__ KeyCode::SHIFT_R, KeyCode::SHIFT_R, KeyCode::CAPSLOCK</autogen>
             <autogen>__DoublePressModifier__ KeyCode::SHIFT_L, KeyCode::SHIFT_L, KeyCode::CAPSLOCK</autogen>
         </item>
