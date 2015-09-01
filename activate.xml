@@ -8,7 +8,7 @@
                 <appendix>【 F => Toggle FANCY MODE 】</appendix>
                 <appendix>【 J => Toggle JUNIOR MODE 】</appendix>
                 <appendix>【 D => Toggle DIVINE MODE 】</appendix>
-                <appendix>【 A => Toggle NUMPAD MODE 】</appendix>
+                <appendix>【 W => Toggle WANDER MODE 】</appendix>
                 <appendix>【 Z => Toggle ZIPPO MODE 】</appendix>
                 <identifier>private.HAPPY_KEYOUT.SLASH_TOGGLE</identifier>
                 <autogen>
@@ -100,18 +100,18 @@
                 </block>
 
                 <block>
-                    <config_only>private.HAPPY_KEYOUT.A_PAD</config_only>
+                    <config_only>private.HAPPY_KEYOUT.W_WANDER</config_only>
                     <block>
-                        <config_not>notsave.A_NUMPAD</config_not>
+                        <config_not>notsave.W_WANDER</config_not>
                         <autogen>
-                            __KeyToKey__ KeyCode::A,
+                            __KeyToKey__ KeyCode::W,
                             {{ SLASH_TOGGLE_FORCE_OFF_ALL }}
-                            KeyCode::VK_CONFIG_FORCE_ON_notsave_MODE_MESSAGE_A,
-                            KeyCode::VK_CONFIG_FORCE_ON_notsave_A_NUMPAD
+                            KeyCode::VK_CONFIG_FORCE_ON_notsave_MODE_MESSAGE_W,
+                            KeyCode::VK_CONFIG_FORCE_ON_notsave_W_WANDER
                         </autogen>
                     </block>
                     <autogen>
-                        __KeyToKey__ KeyCode::A,
+                        __KeyToKey__ KeyCode::W,
                         {{ SLASH_TOGGLE_FORCE_OFF_ALL }}
                     </autogen>
                 </block>
@@ -178,7 +178,7 @@
 
                 <item hidden="true">
                     <name></name>
-                    <identifier vk_config="true">notsave.MODE_MESSAGE_A</identifier>
+                    <identifier vk_config="true">notsave.MODE_MESSAGE_W</identifier>
                     <autogen>__ShowStatusMessage__ NUMPAD MODE</autogen>
                 </item>
 
@@ -324,42 +324,22 @@
         </item>
 
         <item>
-            <name>Activate A_PAD</name>
-            <identifier>private.HAPPY_KEYOUT.A_PAD</identifier>
+            <name>Activate W_WANDER</name>
+            <identifier>private.HAPPY_KEYOUT.W_WANDER</identifier>
             <config_not>notsave.FASTTYPE_MODE</config_not>
             <autogen>
                 __KeyOverlaidModifier__
-                KeyCode::A,
+                KeyCode::W,
 
                 @begin
-                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_A_NUMPAD,
+                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_W_WANDER,
                 @end
 
                 @begin
-                KeyCode::A
-                @end
-            </autogen>
-        </item>
-
-    <!-- 
-        <item>
-            <name>Activate Q_QUICK</name>
-            <identifier>private.HAPPY_KEYOUT.Q_QUICK</identifier>
-            <config_not>notsave.FASTTYPE_MODE</config_not>
-            <autogen>
-                __KeyOverlaidModifier__
-                KeyCode::Q,
-
-                @begin
-                KeyCode::VK_NONE,
-                @end
-
-                @begin
-                KeyCode::Q
+                KeyCode::W
                 @end
             </autogen>
         </item>
-     -->
 
         <item>
             <name>Activate P_PRIVATE</name>
@@ -423,6 +403,7 @@
             </autogen>
         </item>
     -->
+
     </item>
 
 </root>

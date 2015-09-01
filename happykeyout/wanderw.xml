@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <root>
     <item>
-        <name>A_NUMPAD modifier: ** require ** A_NUMPAD activated</name>
+        <name>W_WANDER modifier: ** require ** W_WANDER activated</name>
 
-        <appendix>Hold A_PAD to simulate activate NUMPAD</appendix>
-        <appendix>【 M 】=> 【 0 】; 【 , 】 => 【 00 】; 【 . 】=> 【 . 】</appendix>
+        <appendix>Hold W_WANDER to simulate activate NUMPAD</appendix>
+        <appendix>【 M 】=> 【 0 】; 【 , 】 => 【 00 】</appendix>
         <appendix>【 J 】=> 【 1 】; 【 K 】 => 【 2 】; 【 L 】=> 【 3 】</appendix>
         <appendix>【 U 】=> 【 4 】; 【 I 】 => 【 5 】; 【 O 】=> 【 6 】</appendix>
         <appendix>【 KEY_7 】=> 【 7 】; 【 KEY_8 】 => 【 8 】; 【 KEY_9 】=> 【 9 】</appendix>
-        <appendix>【 p 】=> 【 + 】; 【 ; 】 => 【 - 】; 【 [ 】=> 【 * 】; 【 ' 】 => 【 % 】; 【 / 】 => 【 / 】</appendix>
+        <appendix>【 p 】=> 【 + 】; 【 ; 】 => 【 - 】; 【 [ 】=> 【 * 】; 【 ' 】 => 【 % 】</appendix>
         <appendix>----------------------------------</appendix>
         <appendix>【 Y 】=> 【 DEL 】; 【 H 】 => 【 RETURN 】; 【 N 】=> 【 FORWARD_DEL 】</appendix>
-        <appendix>【 A_PAD + SHIFT + H => Insert a new line below 】</appendix>
-        <appendix>【 A_PAD + SHIFT + CONTROL + H => Insert a new line above 】</appendix>
+        <appendix>【 W_WANDER + SHIFT + H => Insert a new line below 】</appendix>
+        <appendix>【 W_WANDER + SHIFT + CONTROL + H => Insert a new line above 】</appendix>
         
-        <identifier vk_config="true">notsave.A_NUMPAD</identifier>
+        <identifier vk_config="true">notsave.W_WANDER</identifier>
 
-        <autogen>__BlockUntilKeyUp__ KeyCode::A</autogen>
+        <autogen>__BlockUntilKeyUp__ KeyCode::W</autogen>
 
         <block>
             <autogen>__KeyToKey__ KeyCode::M, KeyCode::KEYPAD_0</autogen>
@@ -37,8 +37,6 @@
             <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::KEYPAD_MINUS</autogen>
             <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, KeyCode::KEYPAD_MULTIPLY</autogen>
             <autogen>__KeyToKey__ KeyCode::QUOTE, KeyCode::KEY_5, VK_SHIFT</autogen>
-            <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::KEYPAD_DOT</autogen>
-            <autogen>__KeyToKey__ KeyCode::SLASH, KeyCode::KEYPAD_SLASH</autogen>
         </block>
 
         {{ HAPPY_RETURN }}
