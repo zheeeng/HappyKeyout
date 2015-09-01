@@ -32,18 +32,17 @@
         <replacementname>SLASH_TOGGLE_FORCE_OFF_ALL</replacementname>
         <replacementvalue>
             <![CDATA[
-
                 KeyCode::VK_CONFIG_FORCE_OFF_notsave_MODE_MESSAGE_F,
                 KeyCode::VK_CONFIG_FORCE_OFF_notsave_MODE_MESSAGE_J,
                 KeyCode::VK_CONFIG_FORCE_OFF_notsave_MODE_MESSAGE_D,
-                KeyCode::VK_CONFIG_FORCE_OFF_notsave_MODE_MESSAGE_A,
+                KeyCode::VK_CONFIG_FORCE_OFF_notsave_MODE_MESSAGE_W,
                 KeyCode::VK_CONFIG_FORCE_OFF_notsave_MODE_MESSAGE_P,
                 KeyCode::VK_CONFIG_FORCE_OFF_notsave_MODE_MESSAGE_Z,
                 KeyCode::VK_CONFIG_FORCE_OFF_notsave_FASTTYPE_MODE,
                 KeyCode::VK_CONFIG_FORCE_OFF_notsave_F_FANCY,
                 KeyCode::VK_CONFIG_FORCE_OFF_notsave_J_JUNIOR,
                 KeyCode::VK_CONFIG_FORCE_OFF_notsave_D_DIVINE,
-                KeyCode::VK_CONFIG_FORCE_OFF_notsave_A_NUMPAD,
+                KeyCode::VK_CONFIG_FORCE_OFF_notsave_W_WANDER,
                 KeyCode::VK_CONFIG_FORCE_OFF_notsave_P_PRIVATE,
                 KeyCode::VK_CONFIG_FORCE_OFF_notsave_Z_ZIPPO,
             ]]>

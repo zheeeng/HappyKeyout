@@ -14,12 +14,11 @@
             <include path='./happykeyout/fancyf.xml'/>
             <include path='./happykeyout/juniorj.xml'/>
             <include path='./happykeyout/divined.xml'/>
-            <include path='./happykeyout/numpada.xml'/>
+            <include path='./happykeyout/wanderw.xml'/>
             <include path='./happykeyout/privatep.xml'/>
             <include path='./happykeyout/zippoz.xml'/>
 
             <include path='./happykeyout/ultrau.xml'/>
-            <include path='./happykeyout/quickq.xml'/>
             <include path='./happykeyout/extrax.xml'/>
             <include path='./happykeyout/superspace.xml'/>
         </item>
