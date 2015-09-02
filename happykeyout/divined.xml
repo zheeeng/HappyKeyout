@@ -24,7 +24,7 @@
 
         <!-- scroll -->
         <block>
-            <modifier_only>ModifierFlag::HAPPY_SCROLL</modifier_only>
+            <modifier_only>ModifierFlag::HAPPY_SUPER</modifier_only>
             <autogen>__KeyToKey__ KeyCode::I, KeyCode::VK_MOUSEKEY_SCROLL_UP</autogen>
             <autogen>__KeyToKey__ KeyCode::L, KeyCode::VK_MOUSEKEY_SCROLL_RIGHT</autogen>
             <autogen>__KeyToKey__ KeyCode::K, KeyCode::VK_MOUSEKEY_SCROLL_DOWN</autogen>
@@ -40,10 +40,7 @@
         </block>
 
         <!-- hyper -->
-        <block>
-            <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::VK_MODIFIER_HAPPY_SCROLL</autogen>
-            <autogen>__KeyToKey__ KeyCode::F, KeyCode::VK_MOUSEKEY_HIGHSPEED</autogen>
-        </block>
+        <autogen>__KeyToKey__ KeyCode::F, KeyCode::VK_MOUSEKEY_HIGHSPEED</autogen>
 
         <!-- click -->
         <block>

@@ -4,25 +4,30 @@
         <replacementname>HAPPY_RETURN</replacementname>
         <replacementvalue>
             <![CDATA[
+                <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::VK_MODIFIER_HAPPY_SUPER</autogen>
                 <block>
-                    <autogen>
-                        __KeyToKey__
-                        KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
-                        KeyCode::CURSOR_UP, KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN
-                    </autogen>
+                    <modifier_only>ModifierFlag::HAPPY_SUPER</modifier_only>
+                    <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::FORWARD_DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+                    <autogen>__KeyToKey__ KeyCode::Y, KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+                    <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+                    <autogen>__KeyToKey__ KeyCode::N, KeyCode::FORWARD_DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
                     <autogen>
                         __KeyToKey__
                         KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
-                        KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN
+                        KeyCode::CURSOR_UP, KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN
                     </autogen>
                 </block>
-
                 <block>
                     <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::FORWARD_DELETE</autogen>
                     <autogen>__KeyToKey__ KeyCode::Y, KeyCode::DELETE</autogen>
                     <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::DELETE</autogen>
                     <autogen>__KeyToKey__ KeyCode::N, KeyCode::FORWARD_DELETE</autogen>
                     <autogen>__KeyToKey__ KeyCode::H, KeyCode::RETURN</autogen>
+                    <autogen>
+                        __KeyToKey__
+                        KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+                        KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN
+                    </autogen>
                 </block>
             ]]>
         </replacementvalue>
@@ -68,7 +73,7 @@
         </url>
     </vkopenurldef>
 
-    <modifierdef>HAPPY_SCROLL</modifierdef>
+    <modifierdef>HAPPY_SUPER</modifierdef>
     <modifierdef>HAPPY_JUMP</modifierdef>
 
 </root>
