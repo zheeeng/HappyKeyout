@@ -11,23 +11,15 @@
                     <autogen>__KeyToKey__ KeyCode::Y, KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
                     <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
                     <autogen>__KeyToKey__ KeyCode::N, KeyCode::FORWARD_DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
-                    <autogen>
-                        __KeyToKey__
-                        KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
-                        KeyCode::CURSOR_UP, KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN
-                    </autogen>
+                    <autogen>__KeyToKey__ KeyCode::H, KeyCode::CURSOR_UP, KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN</autogen>
                 </block>
                 <block>
                     <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::FORWARD_DELETE</autogen>
                     <autogen>__KeyToKey__ KeyCode::Y, KeyCode::DELETE</autogen>
                     <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::DELETE</autogen>
                     <autogen>__KeyToKey__ KeyCode::N, KeyCode::FORWARD_DELETE</autogen>
+                    <autogen>__KeyToKey__ KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN</autogen>
                     <autogen>__KeyToKey__ KeyCode::H, KeyCode::RETURN</autogen>
-                    <autogen>
-                        __KeyToKey__
-                        KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
-                        KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN
-                    </autogen>
                 </block>
             ]]>
         </replacementvalue>
