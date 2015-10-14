@@ -50,7 +50,7 @@
     <!-- configurations -->
 
     <item>
-        <name>⌘: HHKB Customjjjjj</name>
+        <name>⌘: HHKB Custom</name>
         <item>
             <name>【 hit CONTROL_L =>  ESCAPE, holding CONTROL_L => hyper 】</name>
             <identifier>private.HHKB.control_hit2_esc</identifier>
