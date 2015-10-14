@@ -25,4 +25,6 @@
 
     </item>
 
+    <include path='./hhkb.xml'/>
+
 </root>
