@@ -1,5 +1,12 @@
 <?xml version="1.0"?>
 <root>
+
+    <appdef>
+      <appname>ALFRED</appname>
+      <equal>com.alfredapp.Alfred</equal>
+      <equal>com.runningwithcrayons.Alfred-2</equal>
+    </appdef>
+    
     <replacementdef>
         <replacementname>HAPPY_RETURN</replacementname>
         <replacementvalue>

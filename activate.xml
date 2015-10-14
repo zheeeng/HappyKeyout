@@ -194,7 +194,7 @@
                     <autogen>__ShowStatusMessage__ ZIPPO MODE</autogen>
                 </item>
             </block>
-        </block>
+        </block>ALFRED
 
         <name>HAPPYKEYOUT MODIFIER SWITCHERS</name>
         <!-- ASDFGHJKL;' -->
@@ -205,10 +205,14 @@
             <identifier>private.HAPPY_KEYOUT.HANDY_MODIFIER</identifier>
             <config_not>notsave.FASTTYPE_MODE</config_not>
 
-            <autogen>__KeyOverlaidModifier__ KeyCode::S, KeyCode::SHIFT_L, KeyCode::S</autogen>
+            <block>
+                <not>ALFRED</not>
+                <autogen>__KeyOverlaidModifier__ KeyCode::S, KeyCode::SHIFT_L, KeyCode::S</autogen>
+                <autogen>__KeyOverlaidModifier__ KeyCode::L, KeyCode::SHIFT_R, KeyCode::L</autogen>
+            </block>
+
             <autogen>__KeyOverlaidModifier__ KeyCode::M, KeyCode::COMMAND_R, KeyCode::M</autogen>
             <autogen>__KeyOverlaidModifier__ KeyCode::K, KeyCode::OPTION_R, KeyCode::K</autogen>
-            <autogen>__KeyOverlaidModifier__ KeyCode::L, KeyCode::SHIFT_R, KeyCode::L</autogen>
             <autogen>__KeyOverlaidModifier__ KeyCode::SEMICOLON, KeyCode::CONTROL_R, KeyCode::SEMICOLON,</autogen>
 
             <block>
