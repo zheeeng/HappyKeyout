@@ -19,23 +19,20 @@
         <autogen>__BlockUntilKeyUp__ KeyCode::W</autogen>
 
         <block>
-            <autogen>__KeyToKey__ KeyCode::M, KeyCode::KEYPAD_0</autogen>
-            <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::KEYPAD_0, KeyCode::KEYPAD_0</autogen>
-            <autogen>__KeyToKey__ KeyCode::J, KeyCode::KEYPAD_1</autogen>
-            <autogen>__KeyToKey__ KeyCode::K, KeyCode::KEYPAD_2</autogen>
-            <autogen>__KeyToKey__ KeyCode::L, KeyCode::KEYPAD_3</autogen>
-            <autogen>__KeyToKey__ KeyCode::U, KeyCode::KEYPAD_4</autogen>
-            <autogen>__KeyToKey__ KeyCode::I, KeyCode::KEYPAD_5</autogen>
-            <autogen>__KeyToKey__ KeyCode::O, KeyCode::KEYPAD_6</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_7, KeyCode::KEYPAD_7</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_8, KeyCode::KEYPAD_8</autogen>
-            <autogen>__KeyToKey__ KeyCode::KEY_9, KeyCode::KEYPAD_9</autogen>
+            <autogen>__KeyToKey__ KeyCode::M, KeyCode::KEY_0</autogen>
+            <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::KEY_0, KeyCode::KEY_0</autogen>
+            <autogen>__KeyToKey__ KeyCode::J, KeyCode::KEY_1</autogen>
+            <autogen>__KeyToKey__ KeyCode::K, KeyCode::KEY_2</autogen>
+            <autogen>__KeyToKey__ KeyCode::L, KeyCode::KEY_3</autogen>
+            <autogen>__KeyToKey__ KeyCode::U, KeyCode::KEY_4</autogen>
+            <autogen>__KeyToKey__ KeyCode::I, KeyCode::KEY_5</autogen>
+            <autogen>__KeyToKey__ KeyCode::O, KeyCode::KEY_6</autogen>
         </block>
 
         <block>
-            <autogen>__KeyToKey__ KeyCode::P, KeyCode::KEYPAD_PLUS</autogen>
-            <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::KEYPAD_MINUS</autogen>
-            <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, KeyCode::KEYPAD_MULTIPLY</autogen>
+            <autogen>__KeyToKey__ KeyCode::P, KeyCode::EQUAL, VK_SHIFT</autogen>
+            <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::MINUS</autogen>
+            <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, KeyCode::KEY_8, VK_SHIFT</autogen>
             <autogen>__KeyToKey__ KeyCode::QUOTE, KeyCode::KEY_5, VK_SHIFT</autogen>
         </block>
 
