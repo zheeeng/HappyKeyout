@@ -1,52 +1,5 @@
 <?xml version="1.0"?>
 <root>
-    <!-- Vendors -->
-    <devicevendordef>
-        <vendorname>Topre</vendorname>
-        <vendorid>0x0853</vendorid>
-    </devicevendordef>
-
-    <deviceproductdef>
-        <productname>HHKB</productname>
-        <productid>0x0100</productid>
-    </deviceproductdef>
-
-    <!-- Apps -->
-    <replacementdef>
-        <replacementname>Jet_Brains</replacementname>
-        <replacementvalue>PhpStorm, RubyMine, IntelliJ, WebStrom, Clion</replacementvalue>
-    </replacementdef>
-    
-    <appdef>
-        <appname>Emacs</appname>
-        <equal>org.gnu.Emacs</equal>
-    </appdef>
-
-    <appdef>
-        <appname>PhpStorm</appname>
-        <prefix>com.jetbrains.PhpStorm</prefix>
-    </appdef>
-
-    <appdef>
-        <appname>RubyMine</appname>
-        <prefix>com.jetbrains.rubymine</prefix>
-    </appdef>
-
-    <appdef>
-        <appname>IntelliJ</appname>
-        <prefix>com.jetbrains.intellij</prefix>
-    </appdef>
-
-    <appdef>
-        <appname>WebStrom</appname>
-        <equal>com.jetbrains.WebStrom</equal>
-    </appdef>
-
-    <appdef>
-      <appname>Clion</appname>
-      <equal>com.jetbrains.Clion</equal>
-    </appdef>
-
     <!-- configurations -->
 
     <item>

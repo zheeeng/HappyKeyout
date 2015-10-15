@@ -1,9 +1,12 @@
 <?xml version="1.0"?>
 <root>
+
+    <include path='./config.xml'/>
+
     <item>
         <name>⌘: HAPPY LAZY CON'S KEYBOARD LAYOUT</name>
 
-        <include path='./config.xml'/>
+
         <include path='./activate.xml'/>
 
         <item>
@@ -26,5 +29,7 @@
     </item>
 
     <include path='./hhkb.xml'/>
+
+    <include path='./esc-caps.xml'/>
 
 </root>

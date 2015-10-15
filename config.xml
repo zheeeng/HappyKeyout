@@ -1,12 +1,61 @@
 <?xml version="1.0"?>
 <root>
 
+    <!-- Vendors -->
+    <devicevendordef>
+        <vendorname>Topre</vendorname>
+        <vendorid>0x0853</vendorid>
+    </devicevendordef>
+
+    <deviceproductdef>
+        <productname>HHKB</productname>
+        <productid>0x0100</productid>
+    </deviceproductdef>
+
+    <!-- Apps -->
+    <replacementdef>
+        <replacementname>Jet_Brains</replacementname>
+        <replacementvalue>PhpStorm, RubyMine, IntelliJ, WebStrom, Clion</replacementvalue>
+    </replacementdef>
+    
+    <appdef>
+        <appname>Emacs</appname>
+        <equal>org.gnu.Emacs</equal>
+    </appdef>
+
+    <appdef>
+        <appname>PhpStorm</appname>
+        <prefix>com.jetbrains.PhpStorm</prefix>
+    </appdef>
+
+    <appdef>
+        <appname>RubyMine</appname>
+        <prefix>com.jetbrains.rubymine</prefix>
+    </appdef>
+
+    <appdef>
+        <appname>IntelliJ</appname>
+        <prefix>com.jetbrains.intellij</prefix>
+    </appdef>
+
+    <appdef>
+        <appname>WebStrom</appname>
+        <equal>com.jetbrains.WebStrom</equal>
+    </appdef>
+
+    <appdef>
+      <appname>Clion</appname>
+      <equal>com.jetbrains.Clion</equal>
+    </appdef>
+
     <appdef>
       <appname>ALFRED</appname>
       <equal>com.alfredapp.Alfred</equal>
       <equal>com.runningwithcrayons.Alfred-2</equal>
     </appdef>
-    
+
+    <!-- General -->
+
     <replacementdef>
         <replacementname>HAPPY_RETURN</replacementname>
         <replacementvalue>
@@ -53,6 +102,8 @@
         </replacementvalue>
     </replacementdef>
 
+    <!-- Operations -->
+
     <vkopenurldef>
         <name>KeyCode::VK_OPEN_URL_SHELL_BUFFER_RANDOM_STRING</name>
         <url type="shell"><![CDATA[    cat /dev/urandom | env LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1 | /usr/bin/pbcopy  ]]></url>
@@ -71,6 +122,8 @@
             ]]>
         </url>
     </vkopenurldef>
+
+    <!-- Modifiers Defines -->
 
     <modifierdef>HAPPY_SUPER</modifierdef>
     <modifierdef>HAPPY_JUMP</modifierdef>

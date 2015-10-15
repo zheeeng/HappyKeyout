@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<root>
+
+    <!-- configurations -->
+
+    <item>
+        <name>⌘: F19 To Esc</name>
+        <appendix>F19, send Esc</appendix>
+        <identifier>private.F192Esc</identifier>
+        <autogen>
+            --KeyToKey--
+            KeyCode::F19, 
+            KeyCode::ESCAPE
+        </autogen>
+    </item>
+
+</root>
