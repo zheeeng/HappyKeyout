@@ -154,7 +154,7 @@
             <block>
                 <item hidden="true">
                     <name></name>
-                    <identifier vk_config="true">notsave.FASTTYPE_MODE</identifier>/
+                    <identifier vk_config="true">notsave.FASTTYPE_MODE</identifier>
                     <autogen>__ShowStatusMessage__ FASTTYPE MODE</autogen>
                 </item>
 
@@ -350,7 +350,7 @@
             <identifier>private.HAPPY_KEYOUT.P_PRIVATE</identifier>
         </item>
 
-    <!-- 
+    <!--
         <item>
             <name>Activate X_EXTRA</name>
             <identifier>private.HAPPY_KEYOUT.X_EXTRA</identifier>
