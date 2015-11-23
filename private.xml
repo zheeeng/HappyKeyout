@@ -30,6 +30,6 @@
 
     <include path='./hhkb.xml'/>
 
-    <include path='./esc-caps.xml'/>
+    <include path='./caps.xml'/>
 
 </root>

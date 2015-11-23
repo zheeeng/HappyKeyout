@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<root>
+
+    <!-- configurations -->
+
+    <item>
+        <name>⌘: Remap holding CapsLock to holding Control, tapping CapsLock to sending ESC, double tapping CapsLock to sending original Capslock</name>
+        <item>
+            <name style="important">!Important Steps:</name>
+            <appendix>1. Install Seil and Launch it.</appendix>
+            <appendix>2. Change Caps Lock's keycode to 80.</appendix>
+            <appendix>3. Open "System Preferences > Keyboard > Modifier Keys..." and change caps lock configuration to "No Action".</appendix>
+            <appendix>Refer to: https://pqrs.org/osx/karabiner/seil.html</appendix>
+            <appendix>Tip: For adjusting the sensitivity of remapping from double taping CapsLock, go to:</appendix>
+            <appendix>Karabiner Preferences > Key Repeat > KeyToKey > Timeout of delayed action.</appendix>
+            <appendix>The suggested value is 150ms.</appendix>
+            <identifier>private.CapslockEscSwitcher</identifier>
+            <autogen>
+                __HoldingKeyToKey__ KeyCode::F19,
+
+                @begin
+                KeyCode::VK_NONE,
+
+                Option::KEYTOKEY_DELAYED_ACTION,
+                KeyCode::ESCAPE,
+
+                Option::KEYTOKEY_DELAYED_ACTION_CANCELED_BY, KeyCode::F19,
+                KeyCode::CAPSLOCK,
+                KeyCode::VK_KEYTOKEY_DELAYED_ACTION_DROP_EVENT
+                @end
+
+                @begin
+                KeyCode::CONTROL_L,
+                @end
+            </autogen>
+        </item>
+
+    </item>
+
+</root>
