@@ -10,13 +10,13 @@
             <item>
                 <name>【 hit CONTROL_L =>  ESCAPE, holding CONTROL_L => CONTROL_L 】</name>
                 <identifier>private.HHKB.control_hit2_esc</identifier>
-                <not>Emacs</not>
                 <device_only>DeviceVendor::Topre, DeviceProduct::HHKB</device_only>
                 <autogen>__KeyOverlaidModifier__ KeyCode::CONTROL_L, KeyCode::CONTROL_L, KeyCode::ESCAPE</autogen>
             </item>
             <item>
                 <name>【 SHIFT x2 => CAPSLOCK 】</name>
                 <identifier>private.hhkb.double_shift_to_capslock</identifier>
+                <device_only>DeviceVendor::Topre, DeviceProduct::HHKB</device_only>
                 <not>{{ Jet_Brains }}</not>
                 <autogen>__DoublePressModifier__ KeyCode::SHIFT_R, KeyCode::SHIFT_R, KeyCode::CAPSLOCK</autogen>
                 <autogen>__DoublePressModifier__ KeyCode::SHIFT_L, KeyCode::SHIFT_L, KeyCode::CAPSLOCK</autogen>
@@ -26,6 +26,7 @@
         <item>
             <name>【 CONTROL_L x1 =>  ESCAPE, CONTROL_L x2 => CAPSLOCK, holding CONTROL_L => CONTROL_L 】</name>
             <identifier>private.hhkb.change_control</identifier>
+            <device_only>DeviceVendor::Topre, DeviceProduct::HHKB</device_only>
             <autogen>
                 __HoldingKeyToKey__ KeyCode::CONTROL_L,
 
@@ -66,14 +67,6 @@
             <identifier>private.hhkb.shift_del_to_forward_del</identifier>
             <device_only>DeviceVendor::Topre, DeviceProduct::HHKB</device_only>
             <autogen>__KeyToKey__ KeyCode::DELETE, VK_SHIFT, KeyCode::FORWARD_DELETE</autogen>
-        </item>
-
-        <item>
-            <name>【 SHIFT x2 => CAPSLOCK 】</name>
-            <identifier>private.hhkb.double_control_to_capslock</identifier>
-            <not>{{ Jet_Brains }}</not>
-            <autogen>__DoublePressModifier__ KeyCode::SHIFT_R, KeyCode::SHIFT_R, KeyCode::CAPSLOCK</autogen>
-            <autogen>__DoublePressModifier__ KeyCode::SHIFT_L, KeyCode::SHIFT_L, KeyCode::CAPSLOCK</autogen>
         </item>
 
     </item>
