@@ -11,7 +11,7 @@
             <device_only>DeviceVendor::Topre, DeviceProduct::HHKB</device_only>
             <autogen>__KeyOverlaidModifier__ KeyCode::CONTROL_L, KeyCode::CONTROL_L, KeyCode::ESCAPE</autogen>
         </item>
-        
+
         <item>
             <name>【 ESCAPE =>  ` 】</name>
             <identifier>private.hhkb.esc_to_backquote</identifier>
@@ -24,14 +24,14 @@
             <identifier>private.hhkb.backquote_to_del</identifier>
             <device_only>DeviceVendor::Topre, DeviceProduct::HHKB</device_only>
             <autogen>__KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::NONE, KeyCode::FORWARD_DELETE</autogen>
-            <autogen>__KeyToKey__ KeyCode::BACKQUOTE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::DELETE</autogen>
+            <autogen>__KeyToKey__ KeyCode::BACKQUOTE, VK_SHIFT, KeyCode::DELETE</autogen>
         </item>
 
         <item>
             <name>【 SHIFT + DELETE => FORWARD_DELETE 】</name>
             <identifier>private.hhkb.shift_del_to_forward_del</identifier>
             <device_only>DeviceVendor::Topre, DeviceProduct::HHKB</device_only>
-            <autogen>__KeyToKey__ KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::FORWARD_DELETE</autogen>
+            <autogen>__KeyToKey__ KeyCode::DELETE, VK_SHIFT, KeyCode::FORWARD_DELETE</autogen>
         </item>
 
         <item>
@@ -41,7 +41,7 @@
             <autogen>__DoublePressModifier__ KeyCode::SHIFT_R, KeyCode::SHIFT_R, KeyCode::CAPSLOCK</autogen>
             <autogen>__DoublePressModifier__ KeyCode::SHIFT_L, KeyCode::SHIFT_L, KeyCode::CAPSLOCK</autogen>
         </item>
-       
+
     </item>
 
 </root>

@@ -17,7 +17,7 @@
         <replacementname>Jet_Brains</replacementname>
         <replacementvalue>PhpStorm, RubyMine, IntelliJ, WebStrom, Clion</replacementvalue>
     </replacementdef>
-    
+
     <appdef>
         <appname>Emacs</appname>
         <equal>org.gnu.Emacs</equal>
@@ -63,18 +63,18 @@
                 <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::VK_MODIFIER_HAPPY_SUPER</autogen>
                 <block>
                     <modifier_only>ModifierFlag::HAPPY_SUPER</modifier_only>
-                    <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::FORWARD_DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
-                    <autogen>__KeyToKey__ KeyCode::Y, KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
-                    <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
-                    <autogen>__KeyToKey__ KeyCode::N, KeyCode::FORWARD_DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+                    <autogen>__KeyToKey__ KeyCode::Y, VK_SHIFT, KeyCode::FORWARD_DELETE, VK_OPTION</autogen>
+                    <autogen>__KeyToKey__ KeyCode::Y, KeyCode::DELETE, VK_OPTION</autogen>
+                    <autogen>__KeyToKey__ KeyCode::N, VK_SHIFT, KeyCode::DELETE, VK_OPTION</autogen>
+                    <autogen>__KeyToKey__ KeyCode::N, KeyCode::FORWARD_DELETE, VK_OPTION</autogen>
                     <autogen>__KeyToKey__ KeyCode::H, KeyCode::CURSOR_UP, KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN</autogen>
                 </block>
                 <block>
-                    <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::FORWARD_DELETE</autogen>
+                    <autogen>__KeyToKey__ KeyCode::Y, VK_SHIFT, KeyCode::FORWARD_DELETE</autogen>
                     <autogen>__KeyToKey__ KeyCode::Y, KeyCode::DELETE</autogen>
-                    <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::DELETE</autogen>
+                    <autogen>__KeyToKey__ KeyCode::N, VK_SHIFT, KeyCode::DELETE</autogen>
                     <autogen>__KeyToKey__ KeyCode::N, KeyCode::FORWARD_DELETE</autogen>
-                    <autogen>__KeyToKey__ KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN</autogen>
+                    <autogen>__KeyToKey__ KeyCode::H, VK_SHIFT, KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN</autogen>
                     <autogen>__KeyToKey__ KeyCode::H, KeyCode::RETURN</autogen>
                 </block>
             ]]>

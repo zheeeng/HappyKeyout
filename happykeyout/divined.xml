@@ -53,7 +53,5 @@
         <!-- warp cursor position -->
         <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::VK_OPEN_URL_SHELL_MOUSE_CURSOR_CENTER</autogen>
 
-        {{ HAPPY_RETURN }}
-
     </item>
 </root>
