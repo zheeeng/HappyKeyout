@@ -200,27 +200,31 @@
         <!-- ASDFGHJKL;' -->
         <item>
             <name>Tranditional Modifiers Remapping</name>
-            <appendix>【A】【S_SHIFT】【D】【F】【G】【H】【J】【K_OPT】【L_SHIFT】【SEMICOLON_CTRL】【QUOTE】</appendix>
+            <appendix>【A_COMMAND】【S_SHIFT】【D_OPTION】【F】【G】【H】【J】【K_OPTION】【L_SHIFT】【SEMICOLON_CTRL】【QUOTE】</appendix>
             <appendix>【Z】【X】【C】【V】【B】【N】【M_META】【COMMA】【DOT】【SLASH】</appendix>
             <identifier>private.HAPPY_KEYOUT.HANDY_MODIFIER</identifier>
             <config_not>notsave.FASTTYPE_MODE</config_not>
+            <not>ALFRED</not>
 
+            <autogen>__KeyOverlaidModifier__ KeyCode::A, KeyCode::COMMAND_L, KeyCode::A</autogen>
+            <autogen>__KeyOverlaidModifier__ KeyCode::S, KeyCode::SHIFT_L, KeyCode::S</autogen>
             <block>
-                <not>ALFRED</not>
-                <autogen>__KeyOverlaidModifier__ KeyCode::S, KeyCode::SHIFT_L, KeyCode::S</autogen>
-                <autogen>__KeyOverlaidModifier__ KeyCode::L, KeyCode::SHIFT_R, KeyCode::L</autogen>
+                <config_not>private.HAPPY_KEYOUT.D_DIVINE</config_only>
+                <autogen>__KeyToKey__ KeyCode::D, KeyCode::OPTION_L</autogen>
             </block>
-
-            <autogen>__KeyOverlaidModifier__ KeyCode::M, KeyCode::COMMAND_R, KeyCode::M</autogen>
             <autogen>__KeyOverlaidModifier__ KeyCode::K, KeyCode::OPTION_R, KeyCode::K</autogen>
-            <autogen>__KeyOverlaidModifier__ KeyCode::SEMICOLON, KeyCode::CONTROL_R, KeyCode::SEMICOLON,</autogen>
+            <autogen>__KeyOverlaidModifier__ KeyCode::L, KeyCode::SHIFT_R, KeyCode::L</autogen>
+            <autogen>__KeyOverlaidModifier__ KeyCode::SEMICOLON, KeyCode::COMMAND_R, KeyCode::SEMICOLON</autogen>
+            <autogen>__KeyOverlaidModifier__ KeyCode::QUOTE, KeyCode::CONTROL_R, KeyCode::QUOTE</autogen>
 
             <block>
+                <autogen>__BlockUntilKeyUp__ KeyCode::A</autogen>
                 <autogen>__BlockUntilKeyUp__ KeyCode::S</autogen>
-                <autogen>__BlockUntilKeyUp__ KeyCode::M</autogen>
+                <autogen>__BlockUntilKeyUp__ KeyCode::D</autogen>
                 <autogen>__BlockUntilKeyUp__ KeyCode::K</autogen>
                 <autogen>__BlockUntilKeyUp__ KeyCode::L</autogen>
                 <autogen>__BlockUntilKeyUp__ KeyCode::SEMICOLON</autogen>
+                <autogen>__BlockUntilKeyUp__ KeyCode::QUOTE</autogen>
             </block>
         </item>
 
@@ -308,23 +312,46 @@
 
         <item>
             <name>Activate D_DIVINE</name>
+            <appendix>KeyCode D is also remapped to left OPTION,</appendix>
+            <appendix>if "Tranditional Modifiers Remapping" is checked.</appendix>
             <identifier>private.HAPPY_KEYOUT.D_DIVINE</identifier>
             <config_not>notsave.FASTTYPE_MODE</config_not>
-            <autogen>
-                __KeyOverlaidModifier__
-                KeyCode::D,
+            <block>
+                <config_only>private.HAPPY_KEYOUT.HANDY_MODIFIER</config_only>
+                <autogen>
+                    __KeyOverlaidModifier__
+                    KeyCode::D,
 
-                @begin
-                KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_D_DIVINE,
-                @end
+                    @begin
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_D_DIVINE | ModifierFlag::OPTION_L,
+                    @end
 
-                @begin
-                KeyCode::D,
-                @end
+                    @begin
+                    KeyCode::D,
+                    @end
 
-                Option::KEYTOKEY_AFTER_KEYUP,
-                KeyCode::VK_MOUSEKEY_LOCK_BUTTON_ALL_FORCE_OFF
-            </autogen>
+                    Option::KEYTOKEY_AFTER_KEYUP,
+                    KeyCode::VK_MOUSEKEY_LOCK_BUTTON_ALL_FORCE_OFF
+                </autogen>
+            </block>
+            <block>
+                <config_not>private.HAPPY_KEYOUT.HANDY_MODIFIER</config_not>
+                <autogen>
+                    __KeyOverlaidModifier__
+                    KeyCode::D,
+
+                    @begin
+                    KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_D_DIVINE
+                    @end
+
+                    @begin
+                    KeyCode::D,
+                    @end
+
+                    Option::KEYTOKEY_AFTER_KEYUP,
+                    KeyCode::VK_MOUSEKEY_LOCK_BUTTON_ALL_FORCE_OFF
+                </autogen>
+            </block>
         </item>
 
         <item>

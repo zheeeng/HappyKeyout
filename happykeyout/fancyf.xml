@@ -20,19 +20,10 @@
         <appendix>【 Y 】=> 【 DEL 】; 【 H 】 => 【 RETURN 】; 【 N 】=> 【 FORWARD_DEL 】</appendix>
         <appendix>【 F_FANCY + SHIFT + H => Insert a new line below 】</appendix>
         <appendix>【 F_FANCY + SHIFT + CONTROL + H => Insert a new line above 】</appendix>
-        
+
         <identifier vk_config="true">notsave.F_FANCY</identifier>
 
         <autogen>__BlockUntilKeyUp__ KeyCode::F</autogen>
-
-        <!-- word or line jump -->
-        <block>
-            <modifier_only>ModifierFlag::HAPPY_JUMP</modifier_only>
-            <autogen>__KeyToKey__ KeyCode::I, KeyCode::CURSOR_LEFT, VK_COMMAND</autogen>
-            <autogen>__KeyToKey__ KeyCode::L, KeyCode::CURSOR_RIGHT, VK_OPTION</autogen>
-            <autogen>__KeyToKey__ KeyCode::K, KeyCode::CURSOR_RIGHT, VK_COMMAND</autogen>
-            <autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_LEFT, VK_OPTION</autogen> 
-        </block>
 
         <!-- curser move -->
         <block>
@@ -51,7 +42,7 @@
         </block>
 
         <!-- hyper -->
-        <autogen>__KeyToKey__ KeyCode::D, KeyCode::VK_MODIFIER_HAPPY_JUMP</autogen>
+        <!-- <autogen>__KeyToKey__ KeyCode::D, KeyCode::OPTION_L</autogen> -->
 
         {{ HAPPY_RETURN }}
     </item>
