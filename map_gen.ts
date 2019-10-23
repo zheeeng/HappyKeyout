@@ -1,3 +1,56 @@
+const NamedKeyMap: Record<string, string> = {
+    '-': 'hyphen',
+    '=': 'equal_sign',
+    '`': 'backquote',
+    '[': 'open_bracket',
+    ']': 'close_bracket',
+    '\\': 'backslash',
+    ';': 'semicolon',
+    '\'': 'quote',
+    ',': 'comma',
+    '.': 'period',
+    '/': 'slash',
+    '↑': 'up_arrow',
+    '←': 'left_arrow',
+    '↓': 'down_arrow',
+    '→': 'right_arrow',
+    '▲': 'page_up',
+    '▼': 'page_down',
+    '◄': 'home',
+    '►': 'end',
+    '↤': 'delete_or_backspace',
+    '↦': 'delete_forward',
+    '↵': 'return_or_enter',
+    '∆': 'volume_increment',
+    '∇': 'volume_decrement',
+    '∅': 'mute',
+    '☀': 'display_brightness_increment',
+    '☼': 'display_brightness_decrement',
+}
+const ShiftUpKeyMap: Record<string, string> = {
+    '!': '1',
+    '@': '2',
+    '#': '3',
+    '$': '4',
+    '%': '5',
+    '^': '6',
+    '&': '7',
+    '*': '8',
+    '(': '9',
+    ')': '0',
+    '_': 'hyphen',
+    '+': 'equal_sign',
+    '~': 'backquote',
+    '{': 'open_bracket',
+    '}': 'close_bracket',
+    '|': 'backslash',
+    ':': 'semicolon',
+    '"': 'quote',
+    '<': 'comma',
+    '>': 'period',
+    '?': 'slash',
+}
+
 type Config = {
     title: string
     description: string
@@ -12,11 +65,13 @@ type Rule = {
 type Manipulator = {
     modifier: string
     modifierVariable: string
-    keys: Array<{ from: string, to: string }>
+    mapping: Array<{ from: string, to: string }>
 }
 
 const HappyDeletion = [
-    { from: 'y', to: '↤' }, { from: 'Y', to: '↦' },
+    { from: 'Y', to: '↦' }, { from: 'y', to: '↤' },
+    { from: 'H', to: '↑►↵' }, { from: 'h', to: '↵' },
+    { from: 'N', to: '↤' }, { from: 'n', to: '↦' },
 ]
 
 const config: Config = {
@@ -29,7 +84,7 @@ const config: Config = {
                 {
                     modifier: 'w',
                     modifierVariable: 'wander_w',
-                    keys: [
+                    mapping: [
                         ...HappyDeletion,
                         { from: '7', to: '7', }, { from: '8', to: '8' }, { from: '9', to: '9', },
                         { from: 'u', to: '4', }, { from: 'i', to: '5' }, { from: 'o', to: '6', },
@@ -46,7 +101,7 @@ const config: Config = {
                 {
                     modifier: 'f',
                     modifierVariable: 'fancy_f',
-                    keys: [
+                    mapping: [
                         ...HappyDeletion,
                         { from: 'i', to: '↑', }, { from: 'j', to: '←' }, { from: 'k', to: '↓', }, { from: 'l', to: '→', },
                         { from: 'u', to: '▲', }, { from: 'o', to: '▼' }, { from: 'm', to: '◄', }, { from: '.', to: '►', },
@@ -64,7 +119,7 @@ const config: Config = {
                 {
                     modifier: 'j',
                     modifierVariable: 'junior_j',
-                    keys: [
+                    mapping: [
                         ...HappyDeletion,
                         { from: '1', to: '!', }, { from: '2', to: '@' }, { from: '3', to: '#', }, { from: '4', to: '$', }, { from: '5', to: '%' },
                         { from: 'q', to: '\'', }, { from: 'w', to: '_' }, { from: 'e', to: '=', }, { from: 'r', to: '\\', }, { from: 't', to: '|' },
@@ -80,7 +135,7 @@ const config: Config = {
                 {
                     modifier: 'x',
                     modifierVariable: 'extra_x',
-                    keys: [
+                    mapping: [
                         ...HappyDeletion,
                         { from: 'u', to: '∆', }, { from: 'j', to: '∇' }, { from: 'm', to: '∅' },
                         { from: 'i', to: '☀', }, { from: 'k', to: '☼', },
@@ -91,66 +146,54 @@ const config: Config = {
     ]
 }
 
-const genCode = (key: string) => {
-    const NamedKeyMap: Record<string, string> = {
-        '-': 'hyphen',
-        '=': 'equal_sign',
-        '`': 'backquote',
-        '[': 'open_bracket',
-        ']': 'close_bracket',
-        '\\': 'backslash',
-        ';': 'semicolon',
-        '\'': 'quote',
-        ',': 'comma',
-        '.': 'period',
-        '/': 'slash',
-        '↑': 'up_arrow',
-        '←': 'left_arrow',
-        '↓': 'down_arrow',
-        '→': 'right_arrow',
-        '▲': 'pageup',
-        '▼': 'pagedown',
-        '◄': 'home',
-        '►': 'end',
-        '↤': 'delete_or_backspace',
-        '↦': 'delete_forward',
-        '∆': 'volume_increment',
-        '∇': 'volume_decrement',
-        '∅': 'mute',
-        '☀': 'display_brightness_increment',
-        '☼': 'display_brightness_decrement',
-    }
-    const ShiftUpKeyMap: Record<string, string> = {
-        '!': '1',
-        '@': '2',
-        '#': '3',
-        '$': '4',
-        '%': '5',
-        '^': '6',
-        '&': '7',
-        '*': '8',
-        '(': '9',
-        ')': '0',
-        '_': 'hyphen',
-        '+': 'equal_sign',
-        '~': 'backquote',
-        '{': 'open_bracket',
-        '}': 'close_bracket',
-        '|': 'backslash',
-        ':': 'semicolon',
-        '"': 'quote',
-        '<': 'comma',
-        '>': 'period',
-        '?': 'slash',
+const genFromCode = (key: string) => {
+    if (ShiftUpKeyMap[key]) {
+        return {
+            modifiers: { optional: ['any'] },
+            key_code: ShiftUpKeyMap[key],
+        }
     }
 
-    return ShiftUpKeyMap[key]
-        ? { key_code: ShiftUpKeyMap[key], modifiers: ['left_shift'] }
-        : NamedKeyMap[key]
-            ? { key_code: NamedKeyMap[key] }
-            : /[a-z]/.test(key) && key === key.toUpperCase()
-                ? { key_code: key, modifiers: ['left_shift'] }
-                : { key_code: key }
+    if (NamedKeyMap[key]) {
+        return {
+            key_code: NamedKeyMap[key],
+        }
+    }
+
+    if (/[A-Z]/.test(key)) {
+        return {
+            modifiers: { mandatory: ['shift'] },
+            key_code: key.toLocaleLowerCase(),
+        }
+    }
+
+    return {
+        modifiers: { optional: ['any'] },
+        key_code: key,
+    }
+}
+
+const genToCode = (combinedKeys: string) => {
+    const keys = combinedKeys.split('')
+
+    return keys.map(key => {
+        if (ShiftUpKeyMap[key]) {
+            return {
+                modifiers: ['left_shift'],
+                key_code: ShiftUpKeyMap[key],
+            }
+        }
+
+        if (NamedKeyMap[key]) {
+            return { key_code: NamedKeyMap[key] }
+        }
+
+        if (/[A-Z]/.test(key)) {
+            return { key_code: key.toLocaleLowerCase(), modifiers: ['left_shift'] }
+        }
+
+        return { key_code: key }
+    })
 }
 
 const genManipulators = (manipulator: Manipulator) =>
@@ -178,22 +221,15 @@ const genManipulators = (manipulator: Manipulator) =>
             ],
         }
         ,
-        ...manipulator.keys.map(key => (
+        ...manipulator.mapping.slice().sort().map(input => (
             {
                 type: 'basic',
-                description: `from ${key.from} to ${key.to}`,
+                description: `from ${input.from} to ${input.to}`,
                 conditions: [
                     { type: 'variable_if', name: manipulator.modifierVariable, value: 1 },
                 ],
-                from: {
-                    ...genCode(key.from),
-                    modifiers: {
-                        optional: [
-                            'any'
-                        ]
-                    }
-                },
-                to: key.to.split('').map(genCode),
+                from: genFromCode(input.from),
+                to: genToCode(input.to),
             }
         ))
     ]
